@@ -7,8 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C3804731F7DEF0E000127A7 /* UIView+WyhUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C38046D1F7DEF0E000127A7 /* UIView+WyhUtil.m */; };
+		7C3804741F7DEF0E000127A7 /* UIView+WyhUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C38046D1F7DEF0E000127A7 /* UIView+WyhUtil.m */; };
+		7C3804751F7DEF0E000127A7 /* UIView+WyhUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C38046D1F7DEF0E000127A7 /* UIView+WyhUtil.m */; };
+		7C3804761F7DEF0E000127A7 /* UIScrollView+WyhUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3804711F7DEF0E000127A7 /* UIScrollView+WyhUtil.m */; };
+		7C3804771F7DEF0E000127A7 /* UIScrollView+WyhUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3804711F7DEF0E000127A7 /* UIScrollView+WyhUtil.m */; };
+		7C3804781F7DEF0E000127A7 /* UIScrollView+WyhUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3804711F7DEF0E000127A7 /* UIScrollView+WyhUtil.m */; };
+		7C38047B1F7DEF3A000127A7 /* WyhUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C38047A1F7DEF3A000127A7 /* WyhUIView.m */; };
+		7C38047C1F7DEF3A000127A7 /* WyhUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C38047A1F7DEF3A000127A7 /* WyhUIView.m */; };
+		7C38047D1F7DEF3A000127A7 /* WyhUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C38047A1F7DEF3A000127A7 /* WyhUIView.m */; };
+		7C3804801F7DEF56000127A7 /* WyhUITextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C38047F1F7DEF56000127A7 /* WyhUITextView.m */; };
+		7C3804811F7DEF56000127A7 /* WyhUITextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C38047F1F7DEF56000127A7 /* WyhUITextView.m */; };
+		7C3804821F7DEF56000127A7 /* WyhUITextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C38047F1F7DEF56000127A7 /* WyhUITextView.m */; };
+		7C3804851F7DEF66000127A7 /* WyhUIScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3804841F7DEF66000127A7 /* WyhUIScrollView.m */; };
+		7C3804861F7DEF66000127A7 /* WyhUIScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3804841F7DEF66000127A7 /* WyhUIScrollView.m */; };
+		7C3804871F7DEF66000127A7 /* WyhUIScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3804841F7DEF66000127A7 /* WyhUIScrollView.m */; };
+		7C38048A1F7DEF77000127A7 /* WyhUILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3804891F7DEF77000127A7 /* WyhUILabel.m */; };
+		7C38048B1F7DEF77000127A7 /* WyhUILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3804891F7DEF77000127A7 /* WyhUILabel.m */; };
+		7C38048C1F7DEF77000127A7 /* WyhUILabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3804891F7DEF77000127A7 /* WyhUILabel.m */; };
+		7C38048F1F7DEF89000127A7 /* WyhUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C38048E1F7DEF89000127A7 /* WyhUIButton.m */; };
+		7C3804901F7DEF89000127A7 /* WyhUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C38048E1F7DEF89000127A7 /* WyhUIButton.m */; };
+		7C3804911F7DEF89000127A7 /* WyhUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C38048E1F7DEF89000127A7 /* WyhUIButton.m */; };
+		7C3804971F7DF016000127A7 /* WyhUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3804961F7DF016000127A7 /* WyhUtil.m */; };
+		7C3804981F7DF016000127A7 /* WyhUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3804961F7DF016000127A7 /* WyhUtil.m */; };
+		7C3804991F7DF016000127A7 /* WyhUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3804961F7DF016000127A7 /* WyhUtil.m */; };
+		7C3804A21F7DF228000127A7 /* WyhUITextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3804A11F7DF228000127A7 /* WyhUITextField.m */; };
+		7C3804A31F7DF228000127A7 /* WyhUITextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3804A11F7DF228000127A7 /* WyhUITextField.m */; };
+		7C3804A41F7DF228000127A7 /* WyhUITextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3804A11F7DF228000127A7 /* WyhUITextField.m */; };
+		7C3804B01F7DF3AB000127A7 /* WyhImageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3804AC1F7DF3AB000127A7 /* WyhImageUtil.m */; };
+		7C3804B11F7DF3AB000127A7 /* WyhImageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3804AC1F7DF3AB000127A7 /* WyhImageUtil.m */; };
+		7C3804B21F7DF3AB000127A7 /* WyhImageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3804AC1F7DF3AB000127A7 /* WyhImageUtil.m */; };
+		7C3804B31F7DF3AB000127A7 /* WyhQrCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3804AF1F7DF3AB000127A7 /* WyhQrCode.m */; };
+		7C3804B41F7DF3AB000127A7 /* WyhQrCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3804AF1F7DF3AB000127A7 /* WyhQrCode.m */; };
+		7C3804B51F7DF3AB000127A7 /* WyhQrCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3804AF1F7DF3AB000127A7 /* WyhQrCode.m */; };
+		7C3804B91F7DF4AD000127A7 /* WyhUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3804B81F7DF4AD000127A7 /* WyhUI.m */; };
+		7C3804BA1F7DF4AD000127A7 /* WyhUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3804B81F7DF4AD000127A7 /* WyhUI.m */; };
+		7C3804BB1F7DF4AD000127A7 /* WyhUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3804B81F7DF4AD000127A7 /* WyhUI.m */; };
+		7C3804BE1F7DF532000127A7 /* WyhUIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3804BD1F7DF532000127A7 /* WyhUIImage.m */; };
+		7C3804BF1F7DF532000127A7 /* WyhUIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3804BD1F7DF532000127A7 /* WyhUIImage.m */; };
+		7C3804C01F7DF532000127A7 /* WyhUIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3804BD1F7DF532000127A7 /* WyhUIImage.m */; };
+		7C3804C31F7E30D0000127A7 /* WyhLabelType.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3804C21F7E30D0000127A7 /* WyhLabelType.m */; };
+		7C3804C41F7E30D0000127A7 /* WyhLabelType.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3804C21F7E30D0000127A7 /* WyhLabelType.m */; };
+		7C3804C51F7E30D0000127A7 /* WyhLabelType.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C3804C21F7E30D0000127A7 /* WyhLabelType.m */; };
+		7C5224CA1F8C6D9A00A72E99 /* WyhSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5224C91F8C6D9A00A72E99 /* WyhSocket.m */; };
+		7C5224CB1F8C6D9A00A72E99 /* WyhSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5224C91F8C6D9A00A72E99 /* WyhSocket.m */; };
+		7C5224CC1F8C6D9A00A72E99 /* WyhSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5224C91F8C6D9A00A72E99 /* WyhSocket.m */; };
+		7C7F84581F8B0EDA002C3C9A /* WyhButtonType.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7F84571F8B0EDA002C3C9A /* WyhButtonType.m */; };
+		7C7F84591F8B0EDA002C3C9A /* WyhButtonType.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7F84571F8B0EDA002C3C9A /* WyhButtonType.m */; };
+		7C7F845A1F8B0EDA002C3C9A /* WyhButtonType.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7F84571F8B0EDA002C3C9A /* WyhButtonType.m */; };
+		7C7F845D1F8B1DF4002C3C9A /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7F845C1F8B1DF4002C3C9A /* SecondViewController.m */; };
+		7C7F845E1F8B1DF4002C3C9A /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7F845C1F8B1DF4002C3C9A /* SecondViewController.m */; };
+		7C7F845F1F8B1DF4002C3C9A /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7F845C1F8B1DF4002C3C9A /* SecondViewController.m */; };
+		7C7F84621F8B1ECD002C3C9A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7F84611F8B1ECD002C3C9A /* FirstViewController.m */; };
+		7C7F84631F8B1ECD002C3C9A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7F84611F8B1ECD002C3C9A /* FirstViewController.m */; };
+		7C7F84641F8B1ECD002C3C9A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7F84611F8B1ECD002C3C9A /* FirstViewController.m */; };
 		7CB04E681F7BAEBB00FFF7FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB04E671F7BAEBB00FFF7FD /* AppDelegate.m */; };
-		7CB04E6B1F7BAEBB00FFF7FD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB04E6A1F7BAEBB00FFF7FD /* ViewController.m */; };
 		7CB04E6E1F7BAEBB00FFF7FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CB04E6C1F7BAEBB00FFF7FD /* Main.storyboard */; };
 		7CB04E711F7BAEBB00FFF7FD /* WyhSDK.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7CB04E6F1F7BAEBB00FFF7FD /* WyhSDK.xcdatamodeld */; };
 		7CB04E731F7BAEBB00FFF7FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB04E721F7BAEBB00FFF7FD /* Assets.xcassets */; };
@@ -36,11 +89,48 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C38046C1F7DEF0E000127A7 /* UIView+WyhUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WyhUtil.h"; sourceTree = "<group>"; };
+		7C38046D1F7DEF0E000127A7 /* UIView+WyhUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WyhUtil.m"; sourceTree = "<group>"; };
+		7C3804701F7DEF0E000127A7 /* UIScrollView+WyhUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+WyhUtil.h"; sourceTree = "<group>"; };
+		7C3804711F7DEF0E000127A7 /* UIScrollView+WyhUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+WyhUtil.m"; sourceTree = "<group>"; };
+		7C3804791F7DEF3A000127A7 /* WyhUIView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhUIView.h; sourceTree = "<group>"; };
+		7C38047A1F7DEF3A000127A7 /* WyhUIView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhUIView.m; sourceTree = "<group>"; };
+		7C38047E1F7DEF56000127A7 /* WyhUITextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhUITextView.h; sourceTree = "<group>"; };
+		7C38047F1F7DEF56000127A7 /* WyhUITextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhUITextView.m; sourceTree = "<group>"; };
+		7C3804831F7DEF66000127A7 /* WyhUIScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhUIScrollView.h; sourceTree = "<group>"; };
+		7C3804841F7DEF66000127A7 /* WyhUIScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhUIScrollView.m; sourceTree = "<group>"; };
+		7C3804881F7DEF77000127A7 /* WyhUILabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhUILabel.h; sourceTree = "<group>"; };
+		7C3804891F7DEF77000127A7 /* WyhUILabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhUILabel.m; sourceTree = "<group>"; };
+		7C38048D1F7DEF89000127A7 /* WyhUIButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhUIButton.h; sourceTree = "<group>"; };
+		7C38048E1F7DEF89000127A7 /* WyhUIButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhUIButton.m; sourceTree = "<group>"; };
+		7C3804931F7DF016000127A7 /* WyhConstant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WyhConstant.h; sourceTree = "<group>"; };
+		7C3804941F7DF016000127A7 /* WyhPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WyhPrefixHeader.pch; sourceTree = "<group>"; };
+		7C3804951F7DF016000127A7 /* WyhUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WyhUtil.h; sourceTree = "<group>"; };
+		7C3804961F7DF016000127A7 /* WyhUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WyhUtil.m; sourceTree = "<group>"; };
+		7C3804A01F7DF228000127A7 /* WyhUITextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhUITextField.h; sourceTree = "<group>"; };
+		7C3804A11F7DF228000127A7 /* WyhUITextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhUITextField.m; sourceTree = "<group>"; };
+		7C3804AB1F7DF3AB000127A7 /* WyhImageUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WyhImageUtil.h; sourceTree = "<group>"; };
+		7C3804AC1F7DF3AB000127A7 /* WyhImageUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WyhImageUtil.m; sourceTree = "<group>"; };
+		7C3804AE1F7DF3AB000127A7 /* WyhQrCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WyhQrCode.h; sourceTree = "<group>"; };
+		7C3804AF1F7DF3AB000127A7 /* WyhQrCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WyhQrCode.m; sourceTree = "<group>"; };
+		7C3804B61F7DF406000127A7 /* WyhFrameWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhFrameWork.h; sourceTree = "<group>"; };
+		7C3804B71F7DF4AD000127A7 /* WyhUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhUI.h; sourceTree = "<group>"; };
+		7C3804B81F7DF4AD000127A7 /* WyhUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhUI.m; sourceTree = "<group>"; };
+		7C3804BC1F7DF532000127A7 /* WyhUIImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhUIImage.h; sourceTree = "<group>"; };
+		7C3804BD1F7DF532000127A7 /* WyhUIImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhUIImage.m; sourceTree = "<group>"; };
+		7C3804C11F7E30D0000127A7 /* WyhLabelType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhLabelType.h; sourceTree = "<group>"; };
+		7C3804C21F7E30D0000127A7 /* WyhLabelType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhLabelType.m; sourceTree = "<group>"; };
+		7C5224C81F8C6D9A00A72E99 /* WyhSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhSocket.h; sourceTree = "<group>"; };
+		7C5224C91F8C6D9A00A72E99 /* WyhSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhSocket.m; sourceTree = "<group>"; };
+		7C7F84561F8B0EDA002C3C9A /* WyhButtonType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhButtonType.h; sourceTree = "<group>"; };
+		7C7F84571F8B0EDA002C3C9A /* WyhButtonType.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhButtonType.m; sourceTree = "<group>"; };
+		7C7F845B1F8B1DF4002C3C9A /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		7C7F845C1F8B1DF4002C3C9A /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		7C7F84601F8B1ECD002C3C9A /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		7C7F84611F8B1ECD002C3C9A /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		7CB04E631F7BAEBB00FFF7FD /* WyhSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WyhSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CB04E661F7BAEBB00FFF7FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7CB04E671F7BAEBB00FFF7FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7CB04E691F7BAEBB00FFF7FD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7CB04E6A1F7BAEBB00FFF7FD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7CB04E6D1F7BAEBB00FFF7FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7CB04E701F7BAEBB00FFF7FD /* WyhSDK.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WyhSDK.xcdatamodel; sourceTree = "<group>"; };
 		7CB04E721F7BAEBB00FFF7FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,6 +170,111 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C38046A1F7DEF0E000127A7 /* WyhUILabel */ = {
+			isa = PBXGroup;
+			children = (
+				7C3804881F7DEF77000127A7 /* WyhUILabel.h */,
+				7C3804891F7DEF77000127A7 /* WyhUILabel.m */,
+				7C3804C11F7E30D0000127A7 /* WyhLabelType.h */,
+				7C3804C21F7E30D0000127A7 /* WyhLabelType.m */,
+			);
+			path = WyhUILabel;
+			sourceTree = "<group>";
+		};
+		7C38046B1F7DEF0E000127A7 /* WyhUIView */ = {
+			isa = PBXGroup;
+			children = (
+				7C38046C1F7DEF0E000127A7 /* UIView+WyhUtil.h */,
+				7C38046D1F7DEF0E000127A7 /* UIView+WyhUtil.m */,
+				7C3804791F7DEF3A000127A7 /* WyhUIView.h */,
+				7C38047A1F7DEF3A000127A7 /* WyhUIView.m */,
+			);
+			path = WyhUIView;
+			sourceTree = "<group>";
+		};
+		7C38046E1F7DEF0E000127A7 /* WyhUIButton */ = {
+			isa = PBXGroup;
+			children = (
+				7C38048D1F7DEF89000127A7 /* WyhUIButton.h */,
+				7C38048E1F7DEF89000127A7 /* WyhUIButton.m */,
+				7C7F84561F8B0EDA002C3C9A /* WyhButtonType.h */,
+				7C7F84571F8B0EDA002C3C9A /* WyhButtonType.m */,
+			);
+			path = WyhUIButton;
+			sourceTree = "<group>";
+		};
+		7C38046F1F7DEF0E000127A7 /* WyhUIScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				7C3804701F7DEF0E000127A7 /* UIScrollView+WyhUtil.h */,
+				7C3804711F7DEF0E000127A7 /* UIScrollView+WyhUtil.m */,
+				7C3804831F7DEF66000127A7 /* WyhUIScrollView.h */,
+				7C3804841F7DEF66000127A7 /* WyhUIScrollView.m */,
+			);
+			path = WyhUIScrollView;
+			sourceTree = "<group>";
+		};
+		7C3804721F7DEF0E000127A7 /* WyhUITextView */ = {
+			isa = PBXGroup;
+			children = (
+				7C38047E1F7DEF56000127A7 /* WyhUITextView.h */,
+				7C38047F1F7DEF56000127A7 /* WyhUITextView.m */,
+			);
+			path = WyhUITextView;
+			sourceTree = "<group>";
+		};
+		7C3804921F7DF016000127A7 /* WyhUtil */ = {
+			isa = PBXGroup;
+			children = (
+				7C3804931F7DF016000127A7 /* WyhConstant.h */,
+				7C3804941F7DF016000127A7 /* WyhPrefixHeader.pch */,
+				7C3804951F7DF016000127A7 /* WyhUtil.h */,
+				7C3804961F7DF016000127A7 /* WyhUtil.m */,
+				7C3804B61F7DF406000127A7 /* WyhFrameWork.h */,
+				7C3804B71F7DF4AD000127A7 /* WyhUI.h */,
+				7C3804B81F7DF4AD000127A7 /* WyhUI.m */,
+			);
+			path = WyhUtil;
+			sourceTree = "<group>";
+		};
+		7C38049F1F7DF215000127A7 /* WyhUITextField */ = {
+			isa = PBXGroup;
+			children = (
+				7C3804A01F7DF228000127A7 /* WyhUITextField.h */,
+				7C3804A11F7DF228000127A7 /* WyhUITextField.m */,
+			);
+			path = WyhUITextField;
+			sourceTree = "<group>";
+		};
+		7C3804AA1F7DF3AB000127A7 /* WyhImage */ = {
+			isa = PBXGroup;
+			children = (
+				7C3804AB1F7DF3AB000127A7 /* WyhImageUtil.h */,
+				7C3804AC1F7DF3AB000127A7 /* WyhImageUtil.m */,
+				7C3804BC1F7DF532000127A7 /* WyhUIImage.h */,
+				7C3804BD1F7DF532000127A7 /* WyhUIImage.m */,
+			);
+			path = WyhImage;
+			sourceTree = "<group>";
+		};
+		7C3804AD1F7DF3AB000127A7 /* WyhQrCode */ = {
+			isa = PBXGroup;
+			children = (
+				7C3804AE1F7DF3AB000127A7 /* WyhQrCode.h */,
+				7C3804AF1F7DF3AB000127A7 /* WyhQrCode.m */,
+			);
+			path = WyhQrCode;
+			sourceTree = "<group>";
+		};
+		7C5224C71F8C6D4200A72E99 /* WyhNetUtil */ = {
+			isa = PBXGroup;
+			children = (
+				7C5224C81F8C6D9A00A72E99 /* WyhSocket.h */,
+				7C5224C91F8C6D9A00A72E99 /* WyhSocket.m */,
+			);
+			path = WyhNetUtil;
+			sourceTree = "<group>";
+		};
 		7CB04E5A1F7BAEBB00FFF7FD = {
 			isa = PBXGroup;
 			children = (
@@ -103,10 +298,13 @@
 		7CB04E651F7BAEBB00FFF7FD /* WyhSDK */ = {
 			isa = PBXGroup;
 			children = (
+				7CB04E9B1F7BAEFB00FFF7FD /* Configuration */,
 				7CB04E661F7BAEBB00FFF7FD /* AppDelegate.h */,
 				7CB04E671F7BAEBB00FFF7FD /* AppDelegate.m */,
-				7CB04E691F7BAEBB00FFF7FD /* ViewController.h */,
-				7CB04E6A1F7BAEBB00FFF7FD /* ViewController.m */,
+				7C7F84601F8B1ECD002C3C9A /* FirstViewController.h */,
+				7C7F84611F8B1ECD002C3C9A /* FirstViewController.m */,
+				7C7F845B1F8B1DF4002C3C9A /* SecondViewController.h */,
+				7C7F845C1F8B1DF4002C3C9A /* SecondViewController.m */,
 				7CB04E6C1F7BAEBB00FFF7FD /* Main.storyboard */,
 				7CB04E721F7BAEBB00FFF7FD /* Assets.xcassets */,
 				7CB04E741F7BAEBB00FFF7FD /* LaunchScreen.storyboard */,
@@ -133,6 +331,23 @@
 				7CB04E8F1F7BAEBB00FFF7FD /* Info.plist */,
 			);
 			path = WyhSDKUITests;
+			sourceTree = "<group>";
+		};
+		7CB04E9B1F7BAEFB00FFF7FD /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				7C5224C71F8C6D4200A72E99 /* WyhNetUtil */,
+				7C3804AA1F7DF3AB000127A7 /* WyhImage */,
+				7C3804AD1F7DF3AB000127A7 /* WyhQrCode */,
+				7C38049F1F7DF215000127A7 /* WyhUITextField */,
+				7C3804921F7DF016000127A7 /* WyhUtil */,
+				7C38046E1F7DEF0E000127A7 /* WyhUIButton */,
+				7C38046A1F7DEF0E000127A7 /* WyhUILabel */,
+				7C38046F1F7DEF0E000127A7 /* WyhUIScrollView */,
+				7C3804721F7DEF0E000127A7 /* WyhUITextView */,
+				7C38046B1F7DEF0E000127A7 /* WyhUIView */,
+			);
+			path = Configuration;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,10 +483,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CB04E6B1F7BAEBB00FFF7FD /* ViewController.m in Sources */,
+				7C7F845D1F8B1DF4002C3C9A /* SecondViewController.m in Sources */,
+				7C3804731F7DEF0E000127A7 /* UIView+WyhUtil.m in Sources */,
+				7C3804971F7DF016000127A7 /* WyhUtil.m in Sources */,
+				7C3804851F7DEF66000127A7 /* WyhUIScrollView.m in Sources */,
 				7CB04E681F7BAEBB00FFF7FD /* AppDelegate.m in Sources */,
+				7C3804C31F7E30D0000127A7 /* WyhLabelType.m in Sources */,
+				7C38048A1F7DEF77000127A7 /* WyhUILabel.m in Sources */,
+				7C7F84621F8B1ECD002C3C9A /* FirstViewController.m in Sources */,
 				7CB04E791F7BAEBB00FFF7FD /* main.m in Sources */,
+				7C3804BE1F7DF532000127A7 /* WyhUIImage.m in Sources */,
+				7C3804B31F7DF3AB000127A7 /* WyhQrCode.m in Sources */,
+				7C3804B91F7DF4AD000127A7 /* WyhUI.m in Sources */,
+				7C7F84581F8B0EDA002C3C9A /* WyhButtonType.m in Sources */,
 				7CB04E711F7BAEBB00FFF7FD /* WyhSDK.xcdatamodeld in Sources */,
+				7C3804B01F7DF3AB000127A7 /* WyhImageUtil.m in Sources */,
+				7C3804761F7DEF0E000127A7 /* UIScrollView+WyhUtil.m in Sources */,
+				7C3804A21F7DF228000127A7 /* WyhUITextField.m in Sources */,
+				7C3804801F7DEF56000127A7 /* WyhUITextView.m in Sources */,
+				7C38048F1F7DEF89000127A7 /* WyhUIButton.m in Sources */,
+				7C5224CA1F8C6D9A00A72E99 /* WyhSocket.m in Sources */,
+				7C38047B1F7DEF3A000127A7 /* WyhUIView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +511,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C5224CB1F8C6D9A00A72E99 /* WyhSocket.m in Sources */,
+				7C7F84591F8B0EDA002C3C9A /* WyhButtonType.m in Sources */,
+				7C7F84631F8B1ECD002C3C9A /* FirstViewController.m in Sources */,
+				7C3804BF1F7DF532000127A7 /* WyhUIImage.m in Sources */,
+				7C38047C1F7DEF3A000127A7 /* WyhUIView.m in Sources */,
+				7C3804BA1F7DF4AD000127A7 /* WyhUI.m in Sources */,
+				7C3804A31F7DF228000127A7 /* WyhUITextField.m in Sources */,
+				7C3804901F7DEF89000127A7 /* WyhUIButton.m in Sources */,
+				7C3804B11F7DF3AB000127A7 /* WyhImageUtil.m in Sources */,
+				7C3804B41F7DF3AB000127A7 /* WyhQrCode.m in Sources */,
+				7C3804981F7DF016000127A7 /* WyhUtil.m in Sources */,
+				7C3804741F7DEF0E000127A7 /* UIView+WyhUtil.m in Sources */,
+				7C3804771F7DEF0E000127A7 /* UIScrollView+WyhUtil.m in Sources */,
+				7C7F845E1F8B1DF4002C3C9A /* SecondViewController.m in Sources */,
+				7C3804811F7DEF56000127A7 /* WyhUITextView.m in Sources */,
+				7C3804C41F7E30D0000127A7 /* WyhLabelType.m in Sources */,
+				7C38048B1F7DEF77000127A7 /* WyhUILabel.m in Sources */,
+				7C3804861F7DEF66000127A7 /* WyhUIScrollView.m in Sources */,
 				7CB04E831F7BAEBB00FFF7FD /* WyhSDKTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,6 +537,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C5224CC1F8C6D9A00A72E99 /* WyhSocket.m in Sources */,
+				7C7F845A1F8B0EDA002C3C9A /* WyhButtonType.m in Sources */,
+				7C7F84641F8B1ECD002C3C9A /* FirstViewController.m in Sources */,
+				7C3804C01F7DF532000127A7 /* WyhUIImage.m in Sources */,
+				7C38047D1F7DEF3A000127A7 /* WyhUIView.m in Sources */,
+				7C3804BB1F7DF4AD000127A7 /* WyhUI.m in Sources */,
+				7C3804A41F7DF228000127A7 /* WyhUITextField.m in Sources */,
+				7C3804911F7DEF89000127A7 /* WyhUIButton.m in Sources */,
+				7C3804B21F7DF3AB000127A7 /* WyhImageUtil.m in Sources */,
+				7C3804B51F7DF3AB000127A7 /* WyhQrCode.m in Sources */,
+				7C3804991F7DF016000127A7 /* WyhUtil.m in Sources */,
+				7C3804751F7DEF0E000127A7 /* UIView+WyhUtil.m in Sources */,
+				7C3804781F7DEF0E000127A7 /* UIScrollView+WyhUtil.m in Sources */,
+				7C7F845F1F8B1DF4002C3C9A /* SecondViewController.m in Sources */,
+				7C3804821F7DEF56000127A7 /* WyhUITextView.m in Sources */,
+				7C3804C51F7E30D0000127A7 /* WyhLabelType.m in Sources */,
+				7C38048C1F7DEF77000127A7 /* WyhUILabel.m in Sources */,
+				7C3804871F7DEF66000127A7 /* WyhUIScrollView.m in Sources */,
 				7CB04E8E1F7BAEBB00FFF7FD /* WyhSDKUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -436,6 +704,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2DVHRQZGMT;
+				GCC_PREFIX_HEADER = /Users/wangyihan/Documents/WyhSDK/WyhSDK/WyhSDK/Configuration/WyhUtil/WyhPrefixHeader.pch;
 				INFOPLIST_FILE = WyhSDK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = simpleway.com.cn.WyhSDK;
@@ -450,6 +719,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2DVHRQZGMT;
+				GCC_PREFIX_HEADER = /Users/wangyihan/Documents/WyhSDK/WyhSDK/WyhSDK/Configuration/WyhUtil/WyhPrefixHeader.pch;
 				INFOPLIST_FILE = WyhSDK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = simpleway.com.cn.WyhSDK;
