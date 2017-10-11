@@ -704,7 +704,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2DVHRQZGMT;
-				GCC_PREFIX_HEADER = /Users/wangyihan/Documents/WyhSDK/WyhSDK/WyhSDK/Configuration/WyhUtil/WyhPrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WyhSDK/Configuration/WyhUtil/WyhPrefixHeader.pch";
 				INFOPLIST_FILE = WyhSDK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = simpleway.com.cn.WyhSDK;
@@ -719,7 +719,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2DVHRQZGMT;
-				GCC_PREFIX_HEADER = /Users/wangyihan/Documents/WyhSDK/WyhSDK/WyhSDK/Configuration/WyhUtil/WyhPrefixHeader.pch;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/WyhSDK/Configuration/WyhUtil/WyhPrefixHeader.pch";
 				INFOPLIST_FILE = WyhSDK/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = simpleway.com.cn.WyhSDK;
