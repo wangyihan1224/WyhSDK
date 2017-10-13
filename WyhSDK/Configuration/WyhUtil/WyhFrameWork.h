@@ -9,16 +9,16 @@
 #ifndef WyhFrameWork_h
 #define WyhFrameWork_h
 
-/*
-静态值
+/*!
+@brief 静态值
  */
 #import "WyhConstant.h"
-/*
- 工具类
+/*!
+ @brief 工具类
  */
 #import "WyhUtil.h"
-/*
- UI控件类
+/*!
+ @brief UI控件类
  */
 #import "WyhUI.h"
 

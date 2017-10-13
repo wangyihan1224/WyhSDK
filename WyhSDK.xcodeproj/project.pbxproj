@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C07CF0C1F905B53005E6193 /* WyhSDKHeaderTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C07CF0B1F905B53005E6193 /* WyhSDKHeaderTest.m */; };
 		7C3804731F7DEF0E000127A7 /* UIView+WyhUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C38046D1F7DEF0E000127A7 /* UIView+WyhUtil.m */; };
 		7C3804741F7DEF0E000127A7 /* UIView+WyhUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C38046D1F7DEF0E000127A7 /* UIView+WyhUtil.m */; };
 		7C3804751F7DEF0E000127A7 /* UIView+WyhUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C38046D1F7DEF0E000127A7 /* UIView+WyhUtil.m */; };
@@ -89,6 +90,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C07CF0A1F905B53005E6193 /* WyhSDKHeaderTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhSDKHeaderTest.h; sourceTree = "<group>"; };
+		7C07CF0B1F905B53005E6193 /* WyhSDKHeaderTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhSDKHeaderTest.m; sourceTree = "<group>"; };
 		7C38046C1F7DEF0E000127A7 /* UIView+WyhUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WyhUtil.h"; sourceTree = "<group>"; };
 		7C38046D1F7DEF0E000127A7 /* UIView+WyhUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WyhUtil.m"; sourceTree = "<group>"; };
 		7C3804701F7DEF0E000127A7 /* UIScrollView+WyhUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+WyhUtil.h"; sourceTree = "<group>"; };
@@ -305,6 +308,8 @@
 				7C7F84611F8B1ECD002C3C9A /* FirstViewController.m */,
 				7C7F845B1F8B1DF4002C3C9A /* SecondViewController.h */,
 				7C7F845C1F8B1DF4002C3C9A /* SecondViewController.m */,
+				7C07CF0A1F905B53005E6193 /* WyhSDKHeaderTest.h */,
+				7C07CF0B1F905B53005E6193 /* WyhSDKHeaderTest.m */,
 				7CB04E6C1F7BAEBB00FFF7FD /* Main.storyboard */,
 				7CB04E721F7BAEBB00FFF7FD /* Assets.xcassets */,
 				7CB04E741F7BAEBB00FFF7FD /* LaunchScreen.storyboard */,
@@ -503,6 +508,7 @@
 				7C3804801F7DEF56000127A7 /* WyhUITextView.m in Sources */,
 				7C38048F1F7DEF89000127A7 /* WyhUIButton.m in Sources */,
 				7C5224CA1F8C6D9A00A72E99 /* WyhSocket.m in Sources */,
+				7C07CF0C1F905B53005E6193 /* WyhSDKHeaderTest.m in Sources */,
 				7C38047B1F7DEF3A000127A7 /* WyhUIView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
