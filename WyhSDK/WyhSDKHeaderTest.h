@@ -65,8 +65,8 @@ typedef struct {
 -(float)toCelcius:(float)fromFahrenheit;
 
 /*!
-@brief 王胖胖不带我吃鸡
-∫
+@brief It converts temperature degrees from Celsius to Fahrenheit scale. 王胖胖不带我吃鸡
+
 @param  fromCelcius The celsius degrees value. 王胖胖不带我吃鸡
 
 @return float The degrees in the Fahrenheit scale. 王胖胖不带我吃鸡

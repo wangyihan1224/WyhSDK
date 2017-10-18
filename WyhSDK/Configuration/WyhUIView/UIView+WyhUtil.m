@@ -295,4 +295,163 @@ static ColorSet _wyhBordColor = nil;
     return _wyhBordColor;
 }
 
+
+
+
+-(void)setWyhTop:(LayoutSet)wyhTop{
+    objc_setAssociatedObject(self, @selector(wyhTop), wyhTop, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    
+}
+static LayoutSet _wyhTop = nil;
+-(LayoutSet)wyhTop{
+    if (!_wyhTop) {
+        _wyhTop = objc_getAssociatedObject(self, _cmd);
+    }
+    __weak typeof(self) selfBlock = self;
+    
+    _wyhTop = ^UIView*(UIView *reference,CGFloat distance){
+ 
+        
+        
+            if (selfBlock.superview == reference) {
+            
+                selfBlock.wyhy(distance);
+                
+            }else{
+                selfBlock.wyhy(reference.wyh_y+reference.wyh_h+distance);
+         
+            }
+        NSLog(@"y is %f,bottom is %@",selfBlock.wyh_y,selfBlock.wyh_bottom);
+        if (selfBlock.wyh_bottom) {
+            selfBlock.wyhh(selfBlock.wyh_bottom.floatValue-selfBlock.wyh_y);
+        }
+        
+        
+        return selfBlock;
+    };
+    return _wyhTop;
+}
+
+-(void)setWyh_bottom:(NSNumber *)wyh_bottom{
+    objc_setAssociatedObject(self, @selector(wyh_bottom), wyh_bottom, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+-(NSNumber *)wyh_bottom{
+    return   objc_getAssociatedObject(self, _cmd);
+}
+-(void)setWyhBottom:(LayoutSet)wyhBottom{
+    objc_setAssociatedObject(self, @selector(wyhBottom), wyhBottom, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    
+}
+static LayoutSet _wyhBottom = nil;
+-(LayoutSet)wyhBottom{
+    if (!_wyhBottom) {
+        _wyhBottom = objc_getAssociatedObject(self, _cmd);
+    }
+    __weak typeof(self) selfBlock = self;
+    
+    _wyhBottom = ^UIView*(UIView *reference,CGFloat distance){
+
+        
+        if (selfBlock.superview == reference) {
+            
+            selfBlock.wyh_bottom = @(reference.wyh_h-distance);
+        }else{
+            selfBlock.wyh_bottom = @(reference.wyh_y-distance);
+        }
+        NSLog(@"y is %f,bottom is %@",selfBlock.wyh_y,selfBlock.wyh_bottom);
+        
+        selfBlock.wyhh(selfBlock.wyh_bottom.floatValue-selfBlock.wyh_y);
+        
+        return selfBlock;
+    };
+    return _wyhBottom;
+}
+-(CGFloat)wyh_left{
+    return self.frame.origin.x;
+}
+-(void)setWyh_left:(CGFloat)wyh_left{
+    CGRect frame = self.frame;
+    frame.origin.x = wyh_left;
+    self.frame = frame;
+}
+-(void)setWyhLeft:(LayoutSet)wyhLeft{
+    objc_setAssociatedObject(self, @selector(wyhLeft), wyhLeft, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    
+}
+static LayoutSet _wyhLeft = nil;
+-(LayoutSet)wyhLeft{
+    if (!_wyhLeft) {
+        _wyhLeft = objc_getAssociatedObject(self, _cmd);
+    }
+    __weak typeof(self) selfBlock = self;
+    
+    _wyhLeft = ^UIView*(UIView *reference,CGFloat distance){
+        
+     
+            if (selfBlock.superview == reference) {
+                selfBlock.wyhx(distance);
+            }else{
+                selfBlock.wyhx(reference.wyh_x+reference.wyh_w+distance);
+            }
+        
+        NSLog(@"x is %f,right is %@",selfBlock.wyh_x,selfBlock.wyh_right);
+        if (selfBlock.wyh_right) {
+            selfBlock.wyhw(selfBlock.wyh_right.floatValue-selfBlock.wyh_x);
+        }
+        
+        
+        return selfBlock;
+    };
+    return _wyhLeft;
+}
+-(NSNumber *)currentWidh{
+    
+    return objc_getAssociatedObject(self, _cmd);
+}
+-(void)setCurrentWidh:(NSNumber *)currentWidh{
+    objc_setAssociatedObject(self, @selector(currentWidh), currentWidh, OBJC_ASSOCIATION_RETAIN);
+}
+-(NSNumber *)currentHeight{
+    
+    return objc_getAssociatedObject(self, _cmd);
+}
+-(void)setCurrentHeight:(NSNumber *)currentHeight{
+    objc_setAssociatedObject(self, @selector(currentHeight), currentHeight, OBJC_ASSOCIATION_RETAIN);
+}
+
+-(NSNumber *)wyh_right{
+    return objc_getAssociatedObject(self, _cmd);
+}
+-(void)setWyh_right:(NSNumber *)wyh_right{
+   objc_setAssociatedObject(self, @selector(wyh_right), wyh_right, OBJC_ASSOCIATION_RETAIN);
+}
+
+-(void)setWyhRight:(LayoutSet)wyhRight{
+    objc_setAssociatedObject(self, @selector(wyhRight), wyhRight, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    
+}
+static LayoutSet _wyhRight = nil;
+-(LayoutSet)wyhRight{
+    if (!_wyhRight) {
+        _wyhRight = objc_getAssociatedObject(self, _cmd);
+    }
+    __weak typeof(self) selfBlock = self;
+    
+    _wyhRight = ^UIView*(UIView *reference,CGFloat distance){
+       
+            if (selfBlock.superview == reference) {
+                selfBlock.wyh_right = @(reference.wyh_w-distance);
+            }else{
+                selfBlock.wyh_right = @(reference.wyh_x-distance);
+            }
+        
+        NSLog(@"x is %f,right is %@",selfBlock.wyh_x,selfBlock.wyh_right);
+        
+        selfBlock.wyhw(selfBlock.wyh_right.floatValue-selfBlock.wyh_x);
+       
+        
+        return selfBlock;
+    };
+    return _wyhRight;
+}
 @end

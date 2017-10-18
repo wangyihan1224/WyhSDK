@@ -14,6 +14,8 @@
 @interface WyhUtil : NSObject
 
 //app初始化设置
+
+
 +(void)WyhAppSet;
 
 @end
