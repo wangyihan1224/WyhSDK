@@ -110,7 +110,7 @@
 -(void)actionUpInSide:(WyhUIButton *)sender{
     
     if (sender.actionObject&&sender.actionSelect) {
-        [sender.actionObject performSelector:sender.actionSelect];
+        [sender.actionObject performSelector:sender.actionSelect withObject:sender];
     }
 }
 /*
