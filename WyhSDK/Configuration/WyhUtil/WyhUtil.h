@@ -11,6 +11,7 @@
 #import "UIScrollView+WyhUtil.h"
 #import "UIView+WyhUtil.h"
 #import "WyhImageUtil.h"
+#import "NSObject+Wyh.h"
 @interface WyhUtil : NSObject
 
 //app初始化设置

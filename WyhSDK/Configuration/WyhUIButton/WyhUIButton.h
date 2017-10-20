@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "WyhButtonType.h"
+//#import "WyhButtonType.h"
 @class WyhUIButton;
 typedef WyhUIButton*(^BtValue) (CGFloat value);
 typedef WyhUIButton*(^BtColor) (UIColor *color);
 typedef WyhUIButton*(^BtText) (NSString *text);
-typedef WyhUIButton*(^WyhButtonTypeSet) (WyhButtonType *type);
+//typedef WyhUIButton*(^WyhButtonTypeSet) (WyhButtonType *type);
 typedef WyhUIButton*(^ActionType) (id actionObject,SEL actionSelect);
 
 
@@ -23,6 +23,6 @@ typedef WyhUIButton*(^ActionType) (id actionObject,SEL actionSelect);
 @property(nonatomic,copy,readonly)BtValue wyhFont;//
 @property(nonatomic,copy,readonly)BtColor wyhTextColor;
 @property(nonatomic,copy,readonly)BtText wyhText;
-@property(nonatomic,copy,readonly)WyhButtonTypeSet wyhType;
+//@property(nonatomic,copy,readonly)WyhButtonTypeSet wyhType;
 @property(nonatomic,copy,readonly)ActionType wyhUpInside;
 @end

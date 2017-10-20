@@ -16,7 +16,7 @@
 @synthesize wyhFont = _wyhFont;
 @synthesize wyhTextColor = _wyhTextColor;
 @synthesize wyhText = _wyhText;
-@synthesize wyhType = _wyhType;
+//@synthesize wyhType = _wyhType;
 @synthesize wyhUpInside = _wyhUpInside;
 
 -(void)setWyhFont:(BtValue)wyhFont{
@@ -69,26 +69,31 @@
     };
     return _wyhText;
 }
--(void)setWyhType:(WyhButtonTypeSet)wyhType{
-    objc_setAssociatedObject(self,@selector(wyhType) , wyhType, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
--(WyhButtonTypeSet)wyhType{
-    
-    __weak typeof(self) selfBlock = self;
-    if (!_wyhType) {
-        _wyhType = objc_getAssociatedObject(self, _cmd);
-    }
-   
-    _wyhType = ^WyhUIButton *(WyhButtonType *type) {
-        
-        selfBlock.titleLabel.font = type.titleLabel.font;
-        [selfBlock setTitleColor:type.currentTitleColor forState:UIControlStateNormal];
-        selfBlock.backgroundColor = type.backgroundColor;
-        return selfBlock;
-    };
-    
-    return _wyhType;
-}
+//-(void)setWyhType:(WyhButtonTypeSet)wyhType{
+//    objc_setAssociatedObject(self,@selector(wyhType) , wyhType, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+//}
+//-(WyhButtonTypeSet)wyhType{
+//
+//    __weak typeof(self) selfBlock = self;
+//    if (!_wyhType) {
+//        _wyhType = objc_getAssociatedObject(self, _cmd);
+//    }
+//
+//    _wyhType = ^WyhUIButton *(WyhButtonType *type) {
+//
+////        NSDictionary *dict = [selfBlock dictionaryForPropertysWithLog:NO];
+////        for (NSString *key in dict.allKeys) {
+////            [selfBlock setValue:[[type dictionaryForPropertysWithLog:NO] objectForKey:key] forKey:key];
+////        }
+//        selfBlock.titleLabel.font = type.titleLabel.font;
+//        [selfBlock setTitleColor:type.currentTitleColor forState:UIControlStateNormal];
+//        selfBlock.backgroundColor = type.backgroundColor;
+//        return selfBlock;
+//    };
+//
+//    return _wyhType;
+//}
+
 -(void)setWyhUpInside:(ActionType)wyhUpInside{
     objc_setAssociatedObject(self, @selector(wyhUpInside), wyhUpInside, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
@@ -113,6 +118,7 @@
         [sender.actionObject performSelector:sender.actionSelect withObject:sender];
     }
 }
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

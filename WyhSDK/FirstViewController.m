@@ -8,7 +8,7 @@
 
 #import "FirstViewController.h"
 #import "SecondViewController.h"
-
+#import "WyhSDKModelTest.h"
 @interface FirstViewController ()
 
 @end
@@ -18,6 +18,33 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
+    self.view.wyhBackColor(WYHWHITE);
+    
+    WyhUITextField *field =WyhUITextField.new;
+    WyhUIButton *bt = WyhUIButton.new;
+//    bt.wyhType(WyhButtonType.normal);
+    
+    [self.view wyh_addSubView:@[field,bt]];
+    
+    field
+    .wyhTop(self.view, 300)
+    .wyhLeft(self.view, 100)
+    .wyhRight(self.view, 100)
+    .wyhh(40)
+    .wyhBordWidth(1)
+    .wyhBordColor(WYHRED)
+    .wyhRadio(4);
+    
+   bt
+    .wyhTop(field, 30)
+    .wyhLeft(self.view, 100)
+    .wyhRight(self.view, 100)
+    .wyhh(40)
+    .wyhBackColor(WYHRED)
+    .wyhRadio(4);
+    
+    
+//    [[UIButton new] dictionaryForPropertysWithLog:YES];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
