@@ -46,8 +46,11 @@
 /*屏幕尺寸*/
 #define WYHSCREEMWIDTH [UIScreen mainScreen].bounds.size.width
 #define WYHSCREEMHEIGHT [UIScreen mainScreen].bounds.size.height
+#define WYHNAVIHEIGHT 68
 /*颜色*/
 #define WYHRED  [UIColor redColor]
 #define WYHYELLOW  [UIColor yellowColor]
 #define WYHWHITE [UIColor whiteColor]
+#define WYHBLUE [UIColor blueColor]
+#define WYHBLACK [UIColor blackColor]
 #endif /* WyhConstant_h */

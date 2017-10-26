@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface FirstViewController : UIViewController
+#import "WyhViewController.h"
+@interface FirstViewController : WyhViewController
 
 @end

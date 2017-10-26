@@ -62,6 +62,10 @@ static FrameSet _wyhw = nil;
    
     _wyhw = ^UIView *(CGFloat f) {
         selfBlock.wyh_w = f;
+        selfBlock.currentWidh = [NSNumber numberWithFloat:f];
+        if (selfBlock.wyh_right) {
+            selfBlock.wyhx(selfBlock.wyh_right.floatValue-f);
+        }
          return selfBlock;
     };
     return _wyhw;
@@ -93,7 +97,12 @@ static FrameSet _wyhh = nil;
     __weak typeof(self) selfBlock = self;
     
     _wyhh = ^UIView *(CGFloat f) {
+        
         selfBlock.wyh_h = f;
+        selfBlock.currentHeight = [NSNumber numberWithFloat:f];
+        if (selfBlock.wyh_bottom) {
+            selfBlock.wyhy(selfBlock.wyh_bottom.floatValue-f);
+        }
          return selfBlock;
     };
     return _wyhh;
@@ -321,7 +330,7 @@ static LayoutSet _wyhTop = nil;
                 selfBlock.wyhy(reference.wyh_y+reference.wyh_h+distance);
          
             }
-        NSLog(@"y is %f,bottom is %@",selfBlock.wyh_y,selfBlock.wyh_bottom);
+    
         if (selfBlock.wyh_bottom) {
             selfBlock.wyhh(selfBlock.wyh_bottom.floatValue-selfBlock.wyh_y);
         }
@@ -351,16 +360,24 @@ static LayoutSet _wyhBottom = nil;
     
     _wyhBottom = ^UIView*(UIView *reference,CGFloat distance){
 
-        
-        if (selfBlock.superview == reference) {
-            
-            selfBlock.wyh_bottom = @(reference.wyh_h-distance);
+        if (selfBlock.currentHeight) {
+           if (selfBlock.superview == reference) {
+                selfBlock.wyhy(reference.wyh_h-distance-selfBlock.wyh_h);
+           }else{
+               selfBlock.wyhy(reference.wyh_y-distance-selfBlock.wyh_h);
+           }
         }else{
-            selfBlock.wyh_bottom = @(reference.wyh_y-distance);
+            if (selfBlock.superview == reference) {
+                
+                selfBlock.wyh_bottom = @(reference.wyh_h-distance);
+            }else{
+                selfBlock.wyh_bottom = @(reference.wyh_y-distance);
+            }
+            if (selfBlock.wyhTop) {
+                selfBlock.wyhh(selfBlock.wyh_bottom.floatValue-selfBlock.wyh_y);
+            }
         }
-        NSLog(@"y is %f,bottom is %@",selfBlock.wyh_y,selfBlock.wyh_bottom);
         
-        selfBlock.wyhh(selfBlock.wyh_bottom.floatValue-selfBlock.wyh_y);
         
         return selfBlock;
     };
@@ -439,19 +456,27 @@ static LayoutSet _wyhRight = nil;
     
     _wyhRight = ^UIView*(UIView *reference,CGFloat distance){
        
+        if (selfBlock.currentWidh) {
+            if (selfBlock.superview == reference) {
+                selfBlock.wyhx(reference.wyh_w-distance-selfBlock.wyh_w);
+            }else{
+                selfBlock.wyhx(reference.wyh_x-distance-selfBlock.wyh_w);
+            }
+        }else{
             if (selfBlock.superview == reference) {
                 selfBlock.wyh_right = @(reference.wyh_w-distance);
             }else{
                 selfBlock.wyh_right = @(reference.wyh_x-distance);
             }
-        
-        NSLog(@"x is %f,right is %@",selfBlock.wyh_x,selfBlock.wyh_right);
-        
-        selfBlock.wyhw(selfBlock.wyh_right.floatValue-selfBlock.wyh_x);
-       
-        
+            if (selfBlock.wyhLeft) {
+                selfBlock.wyhw(selfBlock.wyh_right.floatValue-selfBlock.wyh_x);
+            }
+        }
+
         return selfBlock;
     };
     return _wyhRight;
 }
+
+
 @end

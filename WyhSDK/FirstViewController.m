@@ -9,43 +9,63 @@
 #import "FirstViewController.h"
 #import "SecondViewController.h"
 #import "WyhSDKModelTest.h"
-@interface FirstViewController ()
 
+static NSString *cellId = @"cellId";
+@interface FirstViewController ()<UITableViewDelegate,UITableViewDataSource>
+@property(nonatomic,strong)UITableView *table;
+@property(nonatomic,strong)NSMutableArray *dataArray;
 @end
 
 @implementation FirstViewController
+-(NSMutableArray *)dataArray{
+    if (!_dataArray) {
+        _dataArray = [NSMutableArray new];
+        [_dataArray addObjectsFromArray:@[@"Accelerate"]];
+    }
+    return _dataArray;
+}
+-(UITableView *)table{
+    if (!_table) {
+        _table = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
+        _table.delegate = self;
+        _table.dataSource = self;
+        _table.separatorStyle = UITableViewCellSeparatorStyleNone;
+        [_table registerClass:[UITableViewCell class] forCellReuseIdentifier:cellId];
+    }
+    return _table;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    self.view.wyhBackColor(WYHWHITE);
+    self.wyhTitle.wyhtext(@"WyhSDK");
     
-    WyhUITextField *field =WyhUITextField.new;
-    WyhUIButton *bt = WyhUIButton.new;
-//    bt.wyhType(WyhButtonType.normal);
+    [self.view wyh_addSubView:@[self.table]];
     
-    [self.view wyh_addSubView:@[field,bt]];
+    self.table
+    .wyhTop(self.wyhNavi, 1)
+    .wyhLeft(self.view, 0)
+    .wyhRight(self.view, 0)
+    .wyhBottom(self.view, 0);
     
-    field
-    .wyhTop(self.view, 300)
-    .wyhLeft(self.view, 100)
-    .wyhRight(self.view, 100)
-    .wyhh(40)
-    .wyhBordWidth(1)
-    .wyhBordColor(WYHRED)
-    .wyhRadio(4);
-    
-   bt
-    .wyhTop(field, 30)
-    .wyhLeft(self.view, 100)
-    .wyhRight(self.view, 100)
-    .wyhh(40)
-    .wyhBackColor(WYHRED)
-    .wyhRadio(4);
-    
-    
-//    [[UIButton new] dictionaryForPropertysWithLog:YES];
 }
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
+}
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.dataArray.count;
+}
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
+    cell.textLabel.text = self.dataArray[indexPath.row];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    
+    return cell;
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    return 48;
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

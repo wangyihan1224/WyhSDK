@@ -60,4 +60,7 @@ typedef UIView*(^LayoutSet) (UIView *reference,CGFloat distance);
 //-(UIView *)wyh_layaout;
 //批量加入子视图
 -(void)wyh_addSubView:(NSArray *)views;
+
+
+
 @end

@@ -11,6 +11,6 @@
 
 
 @interface WyhLabelType : UILabel
-
+@property(nonatomic,copy,class)WyhLabelType *navititle;//
 @property(nonatomic,copy,class)WyhLabelType *normal;//
 @end

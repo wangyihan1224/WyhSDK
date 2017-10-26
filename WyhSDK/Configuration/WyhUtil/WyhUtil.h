@@ -19,4 +19,5 @@
 
 +(void)WyhAppSet;
 
+
 @end

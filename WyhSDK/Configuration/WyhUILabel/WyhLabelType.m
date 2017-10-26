@@ -11,7 +11,7 @@
 @implementation WyhLabelType
 
 static WyhLabelType*_normal = nil;
-
+static WyhLabelType*_navititle = nil;
 +(WyhLabelType*)normal{
     if (_normal==nil) {
         _normal = [WyhLabelType new];
@@ -24,6 +24,21 @@ static WyhLabelType*_normal = nil;
 +(void)setNormal:(WyhLabelType *)normal{
     if (normal != _normal) {
         _normal = normal;
+    }
+}
++(WyhLabelType*)navititle{
+    if (_navititle==nil) {
+        _navititle = [WyhLabelType new];
+        _navititle.textColor = WYHRED;
+        _navititle.font = [UIFont systemFontOfSize:20];
+        _navititle.textAlignment = NSTextAlignmentCenter;
+        _navititle.numberOfLines = 1;
+    }
+    return _navititle;
+}
++(void)setNavititle:(WyhLabelType *)navititle{
+    if (navititle != _navititle) {
+        _navititle = navititle;
     }
 }
 @end
