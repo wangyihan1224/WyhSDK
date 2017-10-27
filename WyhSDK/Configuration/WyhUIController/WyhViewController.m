@@ -22,20 +22,27 @@
 
 -(void)makeNavi{
      self.navigationController.navigationBar.hidden = YES;
+    self.view.wyhBackColor(WYHWHITE);
     
     self.wyhNavi = WyhUIView.new;
     self.wyhTitle = WyhUILabel.new;
+    self.wyhBackBt = WyhUIButton.new;
     
     [self.view wyh_addSubView:@[self.wyhNavi]];
-    [self.wyhNavi wyh_addSubView:@[self.wyhTitle]];
+    [self.wyhNavi wyh_addSubView:@[self.wyhTitle,self.wyhBackBt]];
     
     self.wyhNavi.wyhBackColor(WYHYELLOW).wyhf(0, 0, WYHSCREEMWIDTH, WYHNAVIHEIGHT);
     
     self.wyhTitle.wyhType(WyhLabelType.navititle).wyhRight(self.wyhNavi, 0).wyhw(WYHSCREEMWIDTH).wyhh(24).wyhBottom(self.wyhNavi, 10);
     
-    NSLog(@"x %f y %f w  %f h %f",self.wyhTitle.wyh_x,self.wyhTitle.wyh_y,self.wyhTitle.wyh_w,self.wyhTitle.wyh_h);
+    self.wyhBackBt.wyhUpInside(self, @selector(goToBack)).wyhTextColor(WYHRED).wyhText(@"返回").wyhRadio(4).wyhBordColor(WYHRED).wyhBordWidth(1).wyhLeft(self.wyhNavi, 10).wyhh(40).wyhw(60).wyhBottom(self.wyhNavi, 0);
+    
+    self.wyhBackBt.hidden = YES;
 }
-
+-(void)goToBack{
+    
+    [self.navigationController popViewControllerAnimated:YES];
+}
 -(void)addImage:(UIImage *)image withContentRect:(CGRect)rect toLayer:(CALayer *)layer{
     
     layer.contents = (__bridge id)image.CGImage;
@@ -53,6 +60,10 @@
     
     //set contentsCenter
     layer.contentsCenter = rect;
+}
+-(void)wyhPush:(UIViewController *)viewController{
+    viewController.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

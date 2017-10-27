@@ -7,8 +7,9 @@
 //
 
 #import "FirstViewController.h"
-#import "SecondViewController.h"
-#import "WyhSDKModelTest.h"
+
+#import "WyhAccelerateViewController.h"
+
 
 static NSString *cellId = @"cellId";
 @interface FirstViewController ()<UITableViewDelegate,UITableViewDataSource>
@@ -163,6 +164,15 @@ static NSString *cellId = @"cellId";
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     return 48;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    UIViewController *vc = nil;
+    if (indexPath.row==0) {
+         vc = WyhAccelerateViewController.new;
+    }
+   
+    [self wyhPush:vc];
 }
 
 - (void)didReceiveMemoryWarning {

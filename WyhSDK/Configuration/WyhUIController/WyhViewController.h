@@ -23,8 +23,22 @@
  */
 -(void)addImage:(UIImage *)image withContentRect:(CGRect)rect toLayer:(CALayer *)layer;
 - (void)addStretchableImage:(UIImage *)image withContentCenter:(CGRect)rect toLayer:(CALayer *)layer;
+/*!
+ @brief 导航栏push封装
+ @discussion 传入需要push到的VC.
+ @param  viewController  push到的VC
+ 
+ @code
+  暂无
+ @endcode
+ 
+
+ */
+-(void)wyhPush:(UIViewController *)viewController;
 /*!brief  自定义导航栏. */
 @property(nonatomic,strong)WyhUIView *wyhNavi;
 /*!brief  导航栏名称. */
 @property(nonatomic,strong)WyhUILabel *wyhTitle;
+/*!brief  导航栏返回按钮. */
+@property(nonatomic,strong)WyhUIButton *wyhBackBt;
 @end
