@@ -31,7 +31,7 @@
     
     self.wyhNavi.wyhBackColor(WYHYELLOW).wyhf(0, 0, WYHSCREEMWIDTH, WYHNAVIHEIGHT);
     
-    self.wyhTitle.wyhType(WyhLabelType.navititle).wyhRight(self.wyhNavi, 0).wyhw(WYHSCREEMWIDTH).wyhh(24).wyhBottom(self.wyhNavi, 0);
+    self.wyhTitle.wyhType(WyhLabelType.navititle).wyhRight(self.wyhNavi, 0).wyhw(WYHSCREEMWIDTH).wyhh(24).wyhBottom(self.wyhNavi, 10);
     
     NSLog(@"x %f y %f w  %f h %f",self.wyhTitle.wyh_x,self.wyhTitle.wyh_y,self.wyhTitle.wyh_w,self.wyhTitle.wyh_h);
 }
