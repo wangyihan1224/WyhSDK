@@ -59,6 +59,7 @@
 		7C5224CA1F8C6D9A00A72E99 /* WyhSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5224C91F8C6D9A00A72E99 /* WyhSocket.m */; };
 		7C5224CB1F8C6D9A00A72E99 /* WyhSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5224C91F8C6D9A00A72E99 /* WyhSocket.m */; };
 		7C5224CC1F8C6D9A00A72E99 /* WyhSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5224C91F8C6D9A00A72E99 /* WyhSocket.m */; };
+		7C6CE4BF1FA7204300DBE0B0 /* WyhvImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6CE4BE1FA7204300DBE0B0 /* WyhvImageViewController.m */; };
 		7C7F84621F8B1ECD002C3C9A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7F84611F8B1ECD002C3C9A /* FirstViewController.m */; };
 		7C7F84631F8B1ECD002C3C9A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7F84611F8B1ECD002C3C9A /* FirstViewController.m */; };
 		7C7F84641F8B1ECD002C3C9A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7F84611F8B1ECD002C3C9A /* FirstViewController.m */; };
@@ -140,6 +141,8 @@
 		7C4834701F985330007AE30B /* NSObject+Wyh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Wyh.m"; sourceTree = "<group>"; };
 		7C5224C81F8C6D9A00A72E99 /* WyhSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhSocket.h; sourceTree = "<group>"; };
 		7C5224C91F8C6D9A00A72E99 /* WyhSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhSocket.m; sourceTree = "<group>"; };
+		7C6CE4BD1FA7204300DBE0B0 /* WyhvImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhvImageViewController.h; sourceTree = "<group>"; };
+		7C6CE4BE1FA7204300DBE0B0 /* WyhvImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhvImageViewController.m; sourceTree = "<group>"; };
 		7C7F84601F8B1ECD002C3C9A /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		7C7F84611F8B1ECD002C3C9A /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; usesTabs = 0; };
 		7C8065711FA31DB700E50AE6 /* WyhAccelerate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhAccelerate.h; sourceTree = "<group>"; };
@@ -339,6 +342,8 @@
 				7C8065721FA31DB700E50AE6 /* WyhAccelerate.m */,
 				7C8065741FA31DD700E50AE6 /* WyhAccelerateViewController.h */,
 				7C8065751FA31DD700E50AE6 /* WyhAccelerateViewController.m */,
+				7C6CE4BD1FA7204300DBE0B0 /* WyhvImageViewController.h */,
+				7C6CE4BE1FA7204300DBE0B0 /* WyhvImageViewController.m */,
 			);
 			path = WyhAccelerate;
 			sourceTree = "<group>";
@@ -615,6 +620,7 @@
 				7C3EC5811F9F28210084142C /* WyhViewController.m in Sources */,
 				7C07CF0C1F905B53005E6193 /* WyhSDKHeaderTest.m in Sources */,
 				7C80657E1FA337DD00E50AE6 /* WyhModel.m in Sources */,
+				7C6CE4BF1FA7204300DBE0B0 /* WyhvImageViewController.m in Sources */,
 				7C38047B1F7DEF3A000127A7 /* WyhUIView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
