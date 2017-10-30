@@ -20,7 +20,13 @@
             [UITableView appearance].contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
             [UIScrollView appearance].contentInsetAdjustmentBehavior=UIScrollViewContentInsetAdjustmentNever;
         
+        
     }
+  
 }
 
++(CGRect)getStringSize:(NSString *)string withFontSize:(CGFloat)fontSize withMaxWidth:(CGFloat)manWidth{
+    
+    return [string boundingRectWithSize:CGSizeMake(manWidth, MAXFLOAT) options:NSStringDrawingUsesFontLeading | NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:fontSize]} context:nil];
+}
 @end

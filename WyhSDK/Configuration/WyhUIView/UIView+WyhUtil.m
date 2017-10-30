@@ -63,9 +63,6 @@ static FrameSet _wyhw = nil;
     _wyhw = ^UIView *(CGFloat f) {
         selfBlock.wyh_w = f;
         selfBlock.currentWidh = [NSNumber numberWithFloat:f];
-        if (selfBlock.wyh_right) {
-            selfBlock.wyhx(selfBlock.wyh_right.floatValue-f);
-        }
          return selfBlock;
     };
     return _wyhw;
@@ -100,9 +97,7 @@ static FrameSet _wyhh = nil;
         
         selfBlock.wyh_h = f;
         selfBlock.currentHeight = [NSNumber numberWithFloat:f];
-        if (selfBlock.wyh_bottom) {
-            selfBlock.wyhy(selfBlock.wyh_bottom.floatValue-f);
-        }
+   
          return selfBlock;
     };
     return _wyhh;
@@ -236,6 +231,19 @@ static RectSet _wyho = nil;
     objc_setAssociatedObject(self, @selector(wyhRadio), wyhRadio, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     
 }
+-(NSNumber *)wyh_topY{
+     return objc_getAssociatedObject(self, _cmd);
+   
+}
+-(void)setWyh_topY:(NSNumber *)wyh_topY{
+    objc_setAssociatedObject(self, @selector(wyh_topY), wyh_topY, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+-(NSNumber *)wyh_leftX{
+    return objc_getAssociatedObject(self, _cmd);
+}
+-(void)setWyh_leftX:(NSNumber *)wyh_leftX{
+    objc_setAssociatedObject(self,@selector(wyh_leftX) , wyh_leftX, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
 static FrameSet _wyhRadio = nil;
 -(FrameSet)wyhRadio{
     if (!_wyhRadio) {
@@ -320,19 +328,28 @@ static LayoutSet _wyhTop = nil;
     
     _wyhTop = ^UIView*(UIView *reference,CGFloat distance){
  
+        //设置y坐标。
         
         
-            if (selfBlock.superview == reference) {
+        if (selfBlock.superview == reference) {
             
                 selfBlock.wyhy(distance);
                 
-            }else{
+        }else{
                 selfBlock.wyhy(reference.wyh_y+reference.wyh_h+distance);
          
-            }
-    
-        if (selfBlock.wyh_bottom) {
-            selfBlock.wyhh(selfBlock.wyh_bottom.floatValue-selfBlock.wyh_y);
+        }
+        selfBlock.wyh_topY = [NSNumber numberWithFloat:selfBlock.wyh_y];
+    //如果设置过底部y坐标，需要设置高度。
+        
+        if (selfBlock.wyh_bottomY) {
+            selfBlock.wyhh(selfBlock.wyh_bottomY.floatValue-selfBlock.wyh_y);
+            //缓存高度
+            selfBlock.currentHeight = [NSNumber numberWithFloat:selfBlock.wyh_h];
+        }
+        //如果设置过高度，需要设置底部y坐标
+        if (selfBlock.currentHeight) {
+            selfBlock.wyh_bottomY = [NSNumber numberWithFloat:selfBlock.wyh_y+selfBlock.currentHeight.floatValue];
         }
         
         
@@ -341,10 +358,10 @@ static LayoutSet _wyhTop = nil;
     return _wyhTop;
 }
 
--(void)setWyh_bottom:(NSNumber *)wyh_bottom{
-    objc_setAssociatedObject(self, @selector(wyh_bottom), wyh_bottom, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+-(void)setWyh_bottomY:(NSNumber *)wyh_bottomY{
+    objc_setAssociatedObject(self, @selector(wyh_bottomY), wyh_bottomY, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
--(NSNumber *)wyh_bottom{
+-(NSNumber *)wyh_bottomY{
     return   objc_getAssociatedObject(self, _cmd);
 }
 -(void)setWyhBottom:(LayoutSet)wyhBottom{
@@ -360,22 +377,26 @@ static LayoutSet _wyhBottom = nil;
     
     _wyhBottom = ^UIView*(UIView *reference,CGFloat distance){
 
-        if (selfBlock.currentHeight) {
-           if (selfBlock.superview == reference) {
-                selfBlock.wyhy(reference.wyh_h-distance-selfBlock.wyh_h);
-           }else{
-               selfBlock.wyhy(reference.wyh_y-distance-selfBlock.wyh_h);
-           }
+        //设置底部y坐标
+        if (selfBlock.superview == reference) {
+             selfBlock.wyh_bottomY = [NSNumber numberWithFloat:reference.wyh_h-distance];
+           
         }else{
-            if (selfBlock.superview == reference) {
-                
-                selfBlock.wyh_bottom = @(reference.wyh_h-distance);
-            }else{
-                selfBlock.wyh_bottom = @(reference.wyh_y-distance);
-            }
-            if (selfBlock.wyhTop) {
-                selfBlock.wyhh(selfBlock.wyh_bottom.floatValue-selfBlock.wyh_y);
-            }
+            selfBlock.wyh_bottomY = [NSNumber numberWithFloat:reference.wyh_y-distance];
+        }
+       
+        //如果设置过y坐标，需要设置高度
+        if (selfBlock.wyh_topY) {
+            selfBlock.wyhh(selfBlock.wyh_bottomY.floatValue-selfBlock.wyh_topY.floatValue);
+            //缓存高度
+            selfBlock.currentHeight = [NSNumber numberWithFloat:selfBlock.wyh_h];
+        }
+        
+        //如果设置过高度，需要设置y坐标
+        if (selfBlock.currentHeight) {
+            selfBlock.wyhy(selfBlock.wyh_bottomY.floatValue-selfBlock.currentHeight.floatValue);
+            //缓存y坐标
+            selfBlock.wyh_topY = [NSNumber numberWithFloat:selfBlock.wyh_y];
         }
         
         
@@ -404,16 +425,26 @@ static LayoutSet _wyhLeft = nil;
     
     _wyhLeft = ^UIView*(UIView *reference,CGFloat distance){
         
-     
-            if (selfBlock.superview == reference) {
-                selfBlock.wyhx(distance);
-            }else{
-                selfBlock.wyhx(reference.wyh_x+reference.wyh_w+distance);
-            }
+     //1.设置x的值。
         
-        NSLog(@"x is %f,right is %@",selfBlock.wyh_x,selfBlock.wyh_right);
-        if (selfBlock.wyh_right) {
-            selfBlock.wyhw(selfBlock.wyh_right.floatValue-selfBlock.wyh_x);
+    if (selfBlock.superview == reference) {
+        selfBlock.wyhx(distance);
+    }else{
+        selfBlock.wyhx(reference.wyh_rightX.floatValue+distance);
+    }
+    //缓存当前x坐标。
+    selfBlock.wyh_leftX = [NSNumber numberWithFloat:selfBlock.wyh_x];
+        
+        //2.如果设置过rx,需要设置w。
+        if (selfBlock.wyh_rightX) {
+            selfBlock.wyhw(selfBlock.wyh_rightX.floatValue-selfBlock.wyh_x);
+            //缓存宽度。
+            selfBlock.currentWidh = [NSNumber numberWithFloat:selfBlock.wyh_w];
+        }
+        //3.如果设置过w,需要设置rx。
+        if (selfBlock.currentWidh) {
+            //缓存右边x坐标
+            selfBlock.wyh_rightX =[NSNumber numberWithFloat:selfBlock.wyh_x+selfBlock.currentWidh.floatValue];
         }
         
         
@@ -436,11 +467,11 @@ static LayoutSet _wyhLeft = nil;
     objc_setAssociatedObject(self, @selector(currentHeight), currentHeight, OBJC_ASSOCIATION_RETAIN);
 }
 
--(NSNumber *)wyh_right{
+-(NSNumber *)wyh_rightX{
     return objc_getAssociatedObject(self, _cmd);
 }
--(void)setWyh_right:(NSNumber *)wyh_right{
-   objc_setAssociatedObject(self, @selector(wyh_right), wyh_right, OBJC_ASSOCIATION_RETAIN);
+-(void)setWyh_rightX:(NSNumber *)wyh_rightX{
+   objc_setAssociatedObject(self, @selector(wyh_rightX), wyh_rightX, OBJC_ASSOCIATION_RETAIN);
 }
 
 -(void)setWyhRight:(LayoutSet)wyhRight{
@@ -455,23 +486,26 @@ static LayoutSet _wyhRight = nil;
     __weak typeof(self) selfBlock = self;
     
     _wyhRight = ^UIView*(UIView *reference,CGFloat distance){
-       
-        if (selfBlock.currentWidh) {
-            if (selfBlock.superview == reference) {
-                selfBlock.wyhx(reference.wyh_w-distance-selfBlock.wyh_w);
-            }else{
-                selfBlock.wyhx(reference.wyh_x-distance-selfBlock.wyh_w);
-            }
+       //1.设置rx.
+        if (selfBlock.superview == reference) {
+            selfBlock.wyh_rightX = [NSNumber numberWithFloat:reference.wyh_w-distance];
         }else{
-            if (selfBlock.superview == reference) {
-                selfBlock.wyh_right = @(reference.wyh_w-distance);
-            }else{
-                selfBlock.wyh_right = @(reference.wyh_x-distance);
-            }
-            if (selfBlock.wyhLeft) {
-                selfBlock.wyhw(selfBlock.wyh_right.floatValue-selfBlock.wyh_x);
-            }
+            selfBlock.wyh_rightX = [NSNumber numberWithFloat:reference.wyh_x-distance];
         }
+        
+        //2.如果设置过x，需设置w.
+        if (selfBlock.wyh_leftX) {
+            selfBlock.wyhw(selfBlock.wyh_rightX.floatValue-selfBlock.wyh_x);
+            //缓存宽度
+            selfBlock.currentWidh = [NSNumber numberWithFloat:selfBlock.wyh_w];
+        }
+        //如果设置过宽度，需要设置x.
+        if (selfBlock.currentWidh) {
+            selfBlock.wyhx(selfBlock.wyh_rightX.floatValue-selfBlock.currentWidh.floatValue);
+            //缓存x坐标
+            selfBlock.wyh_leftX = [NSNumber numberWithFloat:selfBlock.wyh_x];
+        }
+       
 
         return selfBlock;
     };

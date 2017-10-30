@@ -171,8 +171,11 @@ static NSString *cellId = @"cellId";
     if (indexPath.row==0) {
          vc = WyhAccelerateViewController.new;
     }
-   
-    [self wyhPush:vc];
+    if (vc) {
+        [self wyhPush:vc];
+    }else{
+        
+    }
 }
 
 - (void)didReceiveMemoryWarning {

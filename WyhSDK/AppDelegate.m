@@ -21,7 +21,7 @@
     UINavigationController *nav=   [[UINavigationController alloc]initWithRootViewController:[FirstViewController new]];
     [self.window setRootViewController:nav];
     [self.window makeKeyAndVisible];
-//    [WyhUtil WyhAppSet];
+    [WyhUtil WyhAppSet];
     
     return YES;
 }

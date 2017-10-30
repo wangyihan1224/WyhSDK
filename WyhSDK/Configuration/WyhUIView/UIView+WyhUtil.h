@@ -42,7 +42,7 @@ typedef UIView*(^LayoutSet) (UIView *reference,CGFloat distance);
 
 /*!brief  当前视图底部距离参照视图顶部距离. */
 @property(nonatomic,copy,readonly)LayoutSet wyhBottom;
-@property(nonatomic)NSNumber *wyh_bottom;
+
 
 /*!brief  当前视图左边距离参照视图右边距离. */
 @property(nonatomic,copy,readonly)LayoutSet wyhLeft;
@@ -50,11 +50,20 @@ typedef UIView*(^LayoutSet) (UIView *reference,CGFloat distance);
 
 /*!brief  当前视图右边距离参照视图左边距离. */
 @property(nonatomic,copy,readonly)LayoutSet wyhRight;
-@property(nonatomic)NSNumber *wyh_right;
+
+/*!brief  当前右边x坐标. */
+@property(nonatomic)NSNumber *wyh_rightX;
+/*!brief  当前x坐标. */
+@property(nonatomic)NSNumber *wyh_leftX;
+/*!brief  当前y坐标. */
+@property(nonatomic)NSNumber *wyh_topY;
+/*!brief  当前底部y坐标. */
+@property(nonatomic)NSNumber *wyh_bottomY;
 /*!brief  当前视图高度. */
 @property(nonatomic,strong)NSNumber *currentHeight;
 /*!brief  当前视图宽度. */
 @property(nonatomic,strong)NSNumber *currentWidh;
+
 ////是否开启隐式动画
 //@property(nonatomic,assign)BOOL wyh_isAnimate;
 //-(UIView *)wyh_layaout;

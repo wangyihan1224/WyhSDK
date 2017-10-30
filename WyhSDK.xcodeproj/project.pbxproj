@@ -64,6 +64,8 @@
 		7C7F84641F8B1ECD002C3C9A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7F84611F8B1ECD002C3C9A /* FirstViewController.m */; };
 		7C8065731FA31DB700E50AE6 /* WyhAccelerate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8065721FA31DB700E50AE6 /* WyhAccelerate.m */; };
 		7C8065761FA31DD700E50AE6 /* WyhAccelerateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8065751FA31DD700E50AE6 /* WyhAccelerateViewController.m */; };
+		7C80657A1FA3370F00E50AE6 /* WyhTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8065791FA3370F00E50AE6 /* WyhTableViewCell.m */; };
+		7C80657E1FA337DD00E50AE6 /* WyhModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C80657D1FA337DD00E50AE6 /* WyhModel.m */; };
 		7CB04E681F7BAEBB00FFF7FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB04E671F7BAEBB00FFF7FD /* AppDelegate.m */; };
 		7CB04E6E1F7BAEBB00FFF7FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CB04E6C1F7BAEBB00FFF7FD /* Main.storyboard */; };
 		7CB04E711F7BAEBB00FFF7FD /* WyhSDK.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7CB04E6F1F7BAEBB00FFF7FD /* WyhSDK.xcdatamodeld */; };
@@ -144,6 +146,10 @@
 		7C8065721FA31DB700E50AE6 /* WyhAccelerate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhAccelerate.m; sourceTree = "<group>"; };
 		7C8065741FA31DD700E50AE6 /* WyhAccelerateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhAccelerateViewController.h; sourceTree = "<group>"; };
 		7C8065751FA31DD700E50AE6 /* WyhAccelerateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhAccelerateViewController.m; sourceTree = "<group>"; };
+		7C8065781FA3370F00E50AE6 /* WyhTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhTableViewCell.h; sourceTree = "<group>"; };
+		7C8065791FA3370F00E50AE6 /* WyhTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhTableViewCell.m; sourceTree = "<group>"; };
+		7C80657C1FA337DD00E50AE6 /* WyhModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhModel.h; sourceTree = "<group>"; };
+		7C80657D1FA337DD00E50AE6 /* WyhModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhModel.m; sourceTree = "<group>"; };
 		7CB04E631F7BAEBB00FFF7FD /* WyhSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WyhSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CB04E661F7BAEBB00FFF7FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7CB04E671F7BAEBB00FFF7FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -337,6 +343,31 @@
 			path = WyhAccelerate;
 			sourceTree = "<group>";
 		};
+		7C8065771FA336FA00E50AE6 /* WyhTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				7C8065781FA3370F00E50AE6 /* WyhTableViewCell.h */,
+				7C8065791FA3370F00E50AE6 /* WyhTableViewCell.m */,
+			);
+			path = WyhTableViewCell;
+			sourceTree = "<group>";
+		};
+		7C80657B1FA337CF00E50AE6 /* WyhModel */ = {
+			isa = PBXGroup;
+			children = (
+				7C80657C1FA337DD00E50AE6 /* WyhModel.h */,
+				7C80657D1FA337DD00E50AE6 /* WyhModel.m */,
+			);
+			path = WyhModel;
+			sourceTree = "<group>";
+		};
+		7C80657F1FA33A7C00E50AE6 /* WyhTableView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WyhTableView;
+			sourceTree = "<group>";
+		};
 		7CB04E5A1F7BAEBB00FFF7FD = {
 			isa = PBXGroup;
 			children = (
@@ -404,6 +435,9 @@
 		7CB04E9B1F7BAEFB00FFF7FD /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
+				7C80657F1FA33A7C00E50AE6 /* WyhTableView */,
+				7C80657B1FA337CF00E50AE6 /* WyhModel */,
+				7C8065771FA336FA00E50AE6 /* WyhTableViewCell */,
 				7C3EC57E1F9F28120084142C /* WyhUIController */,
 				7C48346B1F9852F6007AE30B /* WyhNSObject */,
 				7C5224C71F8C6D4200A72E99 /* WyhNetUtil */,
@@ -565,6 +599,7 @@
 				7C3804BE1F7DF532000127A7 /* WyhUIImage.m in Sources */,
 				7C3804B31F7DF3AB000127A7 /* WyhQrCode.m in Sources */,
 				7C3EC57A1F9EE5860084142C /* WyhResume.m in Sources */,
+				7C80657A1FA3370F00E50AE6 /* WyhTableViewCell.m in Sources */,
 				7C3804B91F7DF4AD000127A7 /* WyhUI.m in Sources */,
 				7C4834711F985330007AE30B /* NSObject+Wyh.m in Sources */,
 				7CB04E711F7BAEBB00FFF7FD /* WyhSDK.xcdatamodeld in Sources */,
@@ -579,6 +614,7 @@
 				7C8065761FA31DD700E50AE6 /* WyhAccelerateViewController.m in Sources */,
 				7C3EC5811F9F28210084142C /* WyhViewController.m in Sources */,
 				7C07CF0C1F905B53005E6193 /* WyhSDKHeaderTest.m in Sources */,
+				7C80657E1FA337DD00E50AE6 /* WyhModel.m in Sources */,
 				7C38047B1F7DEF3A000127A7 /* WyhUIView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
