@@ -60,6 +60,8 @@
 		7C5224CB1F8C6D9A00A72E99 /* WyhSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5224C91F8C6D9A00A72E99 /* WyhSocket.m */; };
 		7C5224CC1F8C6D9A00A72E99 /* WyhSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5224C91F8C6D9A00A72E99 /* WyhSocket.m */; };
 		7C6CE4BF1FA7204300DBE0B0 /* WyhvImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6CE4BE1FA7204300DBE0B0 /* WyhvImageViewController.m */; };
+		7C6CE4C31FA7286000DBE0B0 /* WyhAccounts.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6CE4C21FA7286000DBE0B0 /* WyhAccounts.m */; };
+		7C6CE4C61FA7287100DBE0B0 /* WyhAccountsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6CE4C51FA7287100DBE0B0 /* WyhAccountsViewController.m */; };
 		7C7F84621F8B1ECD002C3C9A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7F84611F8B1ECD002C3C9A /* FirstViewController.m */; };
 		7C7F84631F8B1ECD002C3C9A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7F84611F8B1ECD002C3C9A /* FirstViewController.m */; };
 		7C7F84641F8B1ECD002C3C9A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7F84611F8B1ECD002C3C9A /* FirstViewController.m */; };
@@ -143,6 +145,10 @@
 		7C5224C91F8C6D9A00A72E99 /* WyhSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhSocket.m; sourceTree = "<group>"; };
 		7C6CE4BD1FA7204300DBE0B0 /* WyhvImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhvImageViewController.h; sourceTree = "<group>"; };
 		7C6CE4BE1FA7204300DBE0B0 /* WyhvImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhvImageViewController.m; sourceTree = "<group>"; };
+		7C6CE4C11FA7286000DBE0B0 /* WyhAccounts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhAccounts.h; sourceTree = "<group>"; };
+		7C6CE4C21FA7286000DBE0B0 /* WyhAccounts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhAccounts.m; sourceTree = "<group>"; };
+		7C6CE4C41FA7287100DBE0B0 /* WyhAccountsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhAccountsViewController.h; sourceTree = "<group>"; };
+		7C6CE4C51FA7287100DBE0B0 /* WyhAccountsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhAccountsViewController.m; sourceTree = "<group>"; };
 		7C7F84601F8B1ECD002C3C9A /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		7C7F84611F8B1ECD002C3C9A /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; usesTabs = 0; };
 		7C8065711FA31DB700E50AE6 /* WyhAccelerate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhAccelerate.h; sourceTree = "<group>"; };
@@ -327,9 +333,21 @@
 			path = WyhNetUtil;
 			sourceTree = "<group>";
 		};
+		7C6CE4C01FA7285000DBE0B0 /* WyhAccounts */ = {
+			isa = PBXGroup;
+			children = (
+				7C6CE4C11FA7286000DBE0B0 /* WyhAccounts.h */,
+				7C6CE4C21FA7286000DBE0B0 /* WyhAccounts.m */,
+				7C6CE4C41FA7287100DBE0B0 /* WyhAccountsViewController.h */,
+				7C6CE4C51FA7287100DBE0B0 /* WyhAccountsViewController.m */,
+			);
+			path = WyhAccounts;
+			sourceTree = "<group>";
+		};
 		7C80656F1FA31D4D00E50AE6 /* iOSSDKDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7C6CE4C01FA7285000DBE0B0 /* WyhAccounts */,
 				7C8065701FA31D9700E50AE6 /* WyhAccelerate */,
 			);
 			path = iOSSDKDemo;
@@ -605,9 +623,11 @@
 				7C3804B31F7DF3AB000127A7 /* WyhQrCode.m in Sources */,
 				7C3EC57A1F9EE5860084142C /* WyhResume.m in Sources */,
 				7C80657A1FA3370F00E50AE6 /* WyhTableViewCell.m in Sources */,
+				7C6CE4C61FA7287100DBE0B0 /* WyhAccountsViewController.m in Sources */,
 				7C3804B91F7DF4AD000127A7 /* WyhUI.m in Sources */,
 				7C4834711F985330007AE30B /* NSObject+Wyh.m in Sources */,
 				7CB04E711F7BAEBB00FFF7FD /* WyhSDK.xcdatamodeld in Sources */,
+				7C6CE4C31FA7286000DBE0B0 /* WyhAccounts.m in Sources */,
 				7C48346A1F9844DB007AE30B /* WyhSDKModelTest.m in Sources */,
 				7C3804B01F7DF3AB000127A7 /* WyhImageUtil.m in Sources */,
 				7C375A841F98684E0043FFEB /* WyhButtonType.m in Sources */,
