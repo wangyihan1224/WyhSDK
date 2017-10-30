@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface WyhAccounts : NSObject
-
+/*!brief  请求微博城市列表（失效）. */
 +(void)sendSocialRequest;
 @end

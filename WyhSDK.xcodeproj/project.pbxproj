@@ -62,6 +62,8 @@
 		7C6CE4BF1FA7204300DBE0B0 /* WyhvImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6CE4BE1FA7204300DBE0B0 /* WyhvImageViewController.m */; };
 		7C6CE4C31FA7286000DBE0B0 /* WyhAccounts.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6CE4C21FA7286000DBE0B0 /* WyhAccounts.m */; };
 		7C6CE4C61FA7287100DBE0B0 /* WyhAccountsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6CE4C51FA7287100DBE0B0 /* WyhAccountsViewController.m */; };
+		7C6CE4CA1FA72DED00DBE0B0 /* WyhAddressBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6CE4C91FA72DED00DBE0B0 /* WyhAddressBookViewController.m */; };
+		7C6CE4CD1FA72DFB00DBE0B0 /* WyhAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6CE4CC1FA72DFB00DBE0B0 /* WyhAddressBook.m */; };
 		7C7F84621F8B1ECD002C3C9A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7F84611F8B1ECD002C3C9A /* FirstViewController.m */; };
 		7C7F84631F8B1ECD002C3C9A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7F84611F8B1ECD002C3C9A /* FirstViewController.m */; };
 		7C7F84641F8B1ECD002C3C9A /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7F84611F8B1ECD002C3C9A /* FirstViewController.m */; };
@@ -149,6 +151,10 @@
 		7C6CE4C21FA7286000DBE0B0 /* WyhAccounts.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhAccounts.m; sourceTree = "<group>"; };
 		7C6CE4C41FA7287100DBE0B0 /* WyhAccountsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhAccountsViewController.h; sourceTree = "<group>"; };
 		7C6CE4C51FA7287100DBE0B0 /* WyhAccountsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhAccountsViewController.m; sourceTree = "<group>"; };
+		7C6CE4C81FA72DED00DBE0B0 /* WyhAddressBookViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhAddressBookViewController.h; sourceTree = "<group>"; };
+		7C6CE4C91FA72DED00DBE0B0 /* WyhAddressBookViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhAddressBookViewController.m; sourceTree = "<group>"; };
+		7C6CE4CB1FA72DFB00DBE0B0 /* WyhAddressBook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhAddressBook.h; sourceTree = "<group>"; };
+		7C6CE4CC1FA72DFB00DBE0B0 /* WyhAddressBook.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhAddressBook.m; sourceTree = "<group>"; };
 		7C7F84601F8B1ECD002C3C9A /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		7C7F84611F8B1ECD002C3C9A /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; usesTabs = 0; };
 		7C8065711FA31DB700E50AE6 /* WyhAccelerate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhAccelerate.h; sourceTree = "<group>"; };
@@ -344,9 +350,21 @@
 			path = WyhAccounts;
 			sourceTree = "<group>";
 		};
+		7C6CE4C71FA72DDF00DBE0B0 /* WyhAddressBook */ = {
+			isa = PBXGroup;
+			children = (
+				7C6CE4C81FA72DED00DBE0B0 /* WyhAddressBookViewController.h */,
+				7C6CE4C91FA72DED00DBE0B0 /* WyhAddressBookViewController.m */,
+				7C6CE4CB1FA72DFB00DBE0B0 /* WyhAddressBook.h */,
+				7C6CE4CC1FA72DFB00DBE0B0 /* WyhAddressBook.m */,
+			);
+			path = WyhAddressBook;
+			sourceTree = "<group>";
+		};
 		7C80656F1FA31D4D00E50AE6 /* iOSSDKDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7C6CE4C71FA72DDF00DBE0B0 /* WyhAddressBook */,
 				7C6CE4C01FA7285000DBE0B0 /* WyhAccounts */,
 				7C8065701FA31D9700E50AE6 /* WyhAccelerate */,
 			);
@@ -636,6 +654,8 @@
 				7C3804801F7DEF56000127A7 /* WyhUITextView.m in Sources */,
 				7C38048F1F7DEF89000127A7 /* WyhUIButton.m in Sources */,
 				7C5224CA1F8C6D9A00A72E99 /* WyhSocket.m in Sources */,
+				7C6CE4CD1FA72DFB00DBE0B0 /* WyhAddressBook.m in Sources */,
+				7C6CE4CA1FA72DED00DBE0B0 /* WyhAddressBookViewController.m in Sources */,
 				7C8065761FA31DD700E50AE6 /* WyhAccelerateViewController.m in Sources */,
 				7C3EC5811F9F28210084142C /* WyhViewController.m in Sources */,
 				7C07CF0C1F905B53005E6193 /* WyhSDKHeaderTest.m in Sources */,
