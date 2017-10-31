@@ -22,6 +22,7 @@
 
 -(void)makeNavi{
      self.navigationController.navigationBar.hidden = YES;
+//    self.automaticallyAdjustsScrollViewInsets = NO;
     self.view.wyhBackColor(WYHWHITE);
     
     self.wyhNavi = WyhUIView.new;

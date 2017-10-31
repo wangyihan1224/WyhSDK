@@ -52,6 +52,9 @@
     for (int i = 0; i<pepleCount; i++) {
         //拿到一个人
         ABRecordRef person = CFArrayGetValueAtIndex(peopleArray, i);
+        
+        ABRecordID recordId  = ABRecordGetRecordID(person);
+        NSLog(@"recordId is %d",recordId);
         //拿到姓名
         //姓
         NSString *lastaNameValue = (__bridge_transfer NSString *)ABRecordCopyValue(person, kABPersonLastNameProperty);

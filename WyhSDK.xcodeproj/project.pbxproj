@@ -59,6 +59,8 @@
 		7C5224CA1F8C6D9A00A72E99 /* WyhSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5224C91F8C6D9A00A72E99 /* WyhSocket.m */; };
 		7C5224CB1F8C6D9A00A72E99 /* WyhSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5224C91F8C6D9A00A72E99 /* WyhSocket.m */; };
 		7C5224CC1F8C6D9A00A72E99 /* WyhSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5224C91F8C6D9A00A72E99 /* WyhSocket.m */; };
+		7C61319E1FA822970024206C /* WyhAddressBookUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C61319D1FA822970024206C /* WyhAddressBookUI.m */; };
+		7C6131A11FA822AA0024206C /* WyhAddressBookUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6131A01FA822AA0024206C /* WyhAddressBookUIViewController.m */; };
 		7C6CE4BF1FA7204300DBE0B0 /* WyhvImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6CE4BE1FA7204300DBE0B0 /* WyhvImageViewController.m */; };
 		7C6CE4C31FA7286000DBE0B0 /* WyhAccounts.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6CE4C21FA7286000DBE0B0 /* WyhAccounts.m */; };
 		7C6CE4C61FA7287100DBE0B0 /* WyhAccountsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6CE4C51FA7287100DBE0B0 /* WyhAccountsViewController.m */; };
@@ -145,6 +147,10 @@
 		7C4834701F985330007AE30B /* NSObject+Wyh.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Wyh.m"; sourceTree = "<group>"; };
 		7C5224C81F8C6D9A00A72E99 /* WyhSocket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhSocket.h; sourceTree = "<group>"; };
 		7C5224C91F8C6D9A00A72E99 /* WyhSocket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhSocket.m; sourceTree = "<group>"; };
+		7C61319C1FA822970024206C /* WyhAddressBookUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhAddressBookUI.h; sourceTree = "<group>"; };
+		7C61319D1FA822970024206C /* WyhAddressBookUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhAddressBookUI.m; sourceTree = "<group>"; };
+		7C61319F1FA822AA0024206C /* WyhAddressBookUIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhAddressBookUIViewController.h; sourceTree = "<group>"; };
+		7C6131A01FA822AA0024206C /* WyhAddressBookUIViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhAddressBookUIViewController.m; sourceTree = "<group>"; };
 		7C6CE4BD1FA7204300DBE0B0 /* WyhvImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhvImageViewController.h; sourceTree = "<group>"; };
 		7C6CE4BE1FA7204300DBE0B0 /* WyhvImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhvImageViewController.m; sourceTree = "<group>"; };
 		7C6CE4C11FA7286000DBE0B0 /* WyhAccounts.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhAccounts.h; sourceTree = "<group>"; };
@@ -339,6 +345,17 @@
 			path = WyhNetUtil;
 			sourceTree = "<group>";
 		};
+		7C61319B1FA822800024206C /* WyhAddressBookUI */ = {
+			isa = PBXGroup;
+			children = (
+				7C61319C1FA822970024206C /* WyhAddressBookUI.h */,
+				7C61319D1FA822970024206C /* WyhAddressBookUI.m */,
+				7C61319F1FA822AA0024206C /* WyhAddressBookUIViewController.h */,
+				7C6131A01FA822AA0024206C /* WyhAddressBookUIViewController.m */,
+			);
+			path = WyhAddressBookUI;
+			sourceTree = "<group>";
+		};
 		7C6CE4C01FA7285000DBE0B0 /* WyhAccounts */ = {
 			isa = PBXGroup;
 			children = (
@@ -364,6 +381,7 @@
 		7C80656F1FA31D4D00E50AE6 /* iOSSDKDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7C61319B1FA822800024206C /* WyhAddressBookUI */,
 				7C6CE4C71FA72DDF00DBE0B0 /* WyhAddressBook */,
 				7C6CE4C01FA7285000DBE0B0 /* WyhAccounts */,
 				7C8065701FA31D9700E50AE6 /* WyhAccelerate */,
@@ -630,6 +648,7 @@
 			files = (
 				7C3804731F7DEF0E000127A7 /* UIView+WyhUtil.m in Sources */,
 				7C3804971F7DF016000127A7 /* WyhUtil.m in Sources */,
+				7C61319E1FA822970024206C /* WyhAddressBookUI.m in Sources */,
 				7C8065731FA31DB700E50AE6 /* WyhAccelerate.m in Sources */,
 				7C3804851F7DEF66000127A7 /* WyhUIScrollView.m in Sources */,
 				7CB04E681F7BAEBB00FFF7FD /* AppDelegate.m in Sources */,
@@ -661,6 +680,7 @@
 				7C07CF0C1F905B53005E6193 /* WyhSDKHeaderTest.m in Sources */,
 				7C80657E1FA337DD00E50AE6 /* WyhModel.m in Sources */,
 				7C6CE4BF1FA7204300DBE0B0 /* WyhvImageViewController.m in Sources */,
+				7C6131A11FA822AA0024206C /* WyhAddressBookUIViewController.m in Sources */,
 				7C38047B1F7DEF3A000127A7 /* WyhUIView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
