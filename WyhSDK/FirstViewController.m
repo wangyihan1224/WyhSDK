@@ -12,6 +12,8 @@
 #import "WyhAccountsViewController.h"
 #import "WyhAddressBookViewController.h"
 #import "WyhAddressBookUIViewController.h"
+#import "WyhContactsUIViewController.h"
+#import "WyhAdSupportViewController.h"
 static NSString *cellId = @"cellId";
 @interface FirstViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *table;
@@ -177,6 +179,10 @@ static NSString *cellId = @"cellId";
         vc = WyhAddressBookViewController.new;
     }else if (indexPath.row==3){
         vc = WyhAddressBookUIViewController.new;
+    }else if (indexPath.row==4){
+        vc = WyhAdSupportViewController.new;
+    }else if (indexPath.row==15){
+        vc = WyhContactsUIViewController.new;
     }
     if (vc) {
         [self wyhPush:vc];
