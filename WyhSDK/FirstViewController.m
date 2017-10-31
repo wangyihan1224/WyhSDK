@@ -10,7 +10,7 @@
 
 #import "WyhAccelerateViewController.h"
 #import "WyhAccountsViewController.h"
-
+#import "WyhAddressBookViewController.h"
 static NSString *cellId = @"cellId";
 @interface FirstViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *table;
@@ -172,6 +172,8 @@ static NSString *cellId = @"cellId";
          vc = WyhAccelerateViewController.new;
     }else if (indexPath.row==1){
         vc = WyhAccountsViewController.new;
+    }else if (indexPath.row==2){
+        vc = WyhAddressBookViewController.new;
     }
     if (vc) {
         [self wyhPush:vc];
