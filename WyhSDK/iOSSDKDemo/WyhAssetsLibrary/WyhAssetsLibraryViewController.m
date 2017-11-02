@@ -1,34 +1,34 @@
 //
-//  WyhARKitViewController.m
+//  WyhAssetsLibraryViewController.m
 //  WyhSDK
 //
-//  Created by 王乙涵 on 2017/10/31.
+//  Created by 王乙涵 on 2017/11/1.
 //  Copyright © 2017年 王乙涵. All rights reserved.
 //
 
-#import "WyhARKitViewController.h"
+#import "WyhAssetsLibraryViewController.h"
 
-#import "WyhARKit.h"
+#import "WyhAssetsLibrary.h"
 #import "WyhTableViewCell.h"
 static NSString *modelCell = @"modelCell";
-@interface WyhARKitViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface WyhAssetsLibraryViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *table;
 @property(nonatomic,strong)NSMutableArray *dataArray;
 @end
 
-@implementation WyhARKitViewController
+@implementation WyhAssetsLibraryViewController
 -(NSMutableArray *)dataArray{
     if (!_dataArray) {
         _dataArray = [NSMutableArray new];
         WyhModel *model = WyhModel.new;
         model.type = ModelTypeString;
-        model.textStr = @"ARKit增强现实技术框架\n是一种实时地计算摄影机影像的位置及角度并加上相应图像的技术，这种技术的目标是在屏幕上把虚拟世界套在现实世界并进行互动。";
+        model.textStr = @"AssetsLibrary手机相册框架\n获取手机相册里面的图片或者视频";
         
         WyhModel *model1 = WyhModel.new;
         model1.type = ModelTypeString;
-        model1.textStr = @"创建一个AR视图";
+        model1.textStr = @"查看相册";
         
-    
+        
         
         [_dataArray addObjectsFromArray:@[model,model1]];
     }
@@ -47,7 +47,7 @@ static NSString *modelCell = @"modelCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.wyhTitle.wyhtext(@"ARKit") ;
+    self.wyhTitle.wyhtext(@"AssetsLibrary") ;
     self.wyhBackBt.hidden = NO;
     
     [self.view wyh_addSubView:@[self.table]];
@@ -88,9 +88,13 @@ static NSString *modelCell = @"modelCell";
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     UIViewController *vc = nil;
     if (indexPath.row==1) {
-      [WyhARKit runView:[WyhARKit creatScreen:self]] ;
+        WyhAssetsLibrary *ass =  [WyhAssetsLibrary new];
+        ass.imageview = [[UIImageView alloc]initWithFrame:CGRectMake(200, 200, 200, 200)];
+        [self.view addSubview:ass.imageview];
+        
+        [WyhAssetsLibrary getAllPhotos];
     }else if (indexPath.row==2){
-     
+        
     }else if (indexPath.row==3){
         
     }

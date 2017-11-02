@@ -18,7 +18,20 @@
 
 
 +(void)WyhAppSet;
+/*!
+ @brief 判断是否是真机
+ 
 
+ 
+ @return BOOL 真机 YES 模拟器 NO
+ 
+ @code
+ [WyhAppSet isDevice];
+ @endcode
+ 
+ 
+ */
++(BOOL)isDevice;
 /*!
  @brief 获取字符串高宽
  @discussion 通过字号，字符串内容，最大宽度，获取字符串高宽.

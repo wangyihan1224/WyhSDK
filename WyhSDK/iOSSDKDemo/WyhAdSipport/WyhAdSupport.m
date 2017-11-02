@@ -17,11 +17,12 @@
 }
 +(void)lookIsAdEnabled{
     ASIdentifierManager *manager =    [ASIdentifierManager sharedManager];
-    if (TARGET_IPHONE_SIMULATOR == 1 && TARGET_OS_IPHONE == 1) {
-        NSLog(@"模拟器不支持该操作");
+   
+    if ([WyhUtil isDevice]) {
+         NSLog(@"用户是否限制了广告跟踪 %@",manager.advertisingTrackingEnabled);
+    }else{
+         NSLog(@"模拟器不支持该操作");
     }
     
-    return;
-     NSLog(@"用户是否限制了广告跟踪 %@",manager.advertisingTrackingEnabled);
 }
 @end

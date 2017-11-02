@@ -7,7 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <ARKit/ARKit.h>
+#import <SceneKit/SceneKit.h>
 @interface WyhARKit : NSObject
+
++(ARSCNView*)creatScreen:(UIViewController *)vc;
++(void)runView:(ARSCNView*)sceneView;
++(void)stopView:(ARSCNView*)sceneView;
 
 @end

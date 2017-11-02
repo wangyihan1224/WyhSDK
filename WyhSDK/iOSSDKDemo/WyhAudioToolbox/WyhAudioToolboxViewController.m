@@ -1,36 +1,42 @@
 //
-//  WyhARKitViewController.m
+//  WyhAudioToolboxViewController.m
 //  WyhSDK
 //
-//  Created by 王乙涵 on 2017/10/31.
+//  Created by 王乙涵 on 2017/11/1.
 //  Copyright © 2017年 王乙涵. All rights reserved.
 //
 
-#import "WyhARKitViewController.h"
+#import "WyhAudioToolboxViewController.h"
 
-#import "WyhARKit.h"
+#import "WyhAudioToolbox.h"
 #import "WyhTableViewCell.h"
 static NSString *modelCell = @"modelCell";
-@interface WyhARKitViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface WyhAudioToolboxViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *table;
 @property(nonatomic,strong)NSMutableArray *dataArray;
 @end
 
-@implementation WyhARKitViewController
+@implementation WyhAudioToolboxViewController
 -(NSMutableArray *)dataArray{
     if (!_dataArray) {
         _dataArray = [NSMutableArray new];
         WyhModel *model = WyhModel.new;
         model.type = ModelTypeString;
-        model.textStr = @"ARKit增强现实技术框架\n是一种实时地计算摄影机影像的位置及角度并加上相应图像的技术，这种技术的目标是在屏幕上把虚拟世界套在现实世界并进行互动。";
+        model.textStr = @"AudioToolbox系统提示音框架\n可以将短声音注册到system sound服务上，被注册到system sound服务上的声音称之为 system sounds。它必须满足下面几个条件。\n(1).播放的时间不能超过30秒\n(2).数据必须是 PCM或者IMA4流格式\n(3).必须被打包成下面三个格式之一：Core Audio Format (.caf), Waveform audio (.wav), 或者 Audio Interchange File (.aiff)\n声音文件必须放到设备的本地文件夹下面。通过AudioServicesCreateSystemSoundID方法注册这个声音文件.";
         
         WyhModel *model1 = WyhModel.new;
         model1.type = ModelTypeString;
-        model1.textStr = @"创建一个AR视图";
+        model1.textStr = @"播放系统声音";
         
-    
+        WyhModel *model2 = WyhModel.new;
+        model2.type = ModelTypeString;
+        model2.textStr = @"播放系统声音";
         
-        [_dataArray addObjectsFromArray:@[model,model1]];
+        WyhModel *model3 = WyhModel.new;
+        model3.type = ModelTypeString;
+        model3.textStr = @"震动";
+        
+        [_dataArray addObjectsFromArray:@[model,model1,model2,model3]];
     }
     return _dataArray;
 }
@@ -47,7 +53,7 @@ static NSString *modelCell = @"modelCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.wyhTitle.wyhtext(@"ARKit") ;
+    self.wyhTitle.wyhtext(@"AudioToolbox") ;
     self.wyhBackBt.hidden = NO;
     
     [self.view wyh_addSubView:@[self.table]];
@@ -88,11 +94,11 @@ static NSString *modelCell = @"modelCell";
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     UIViewController *vc = nil;
     if (indexPath.row==1) {
-      [WyhARKit runView:[WyhARKit creatScreen:self]] ;
+        [WyhAudioToolbox playSystemSound];
     }else if (indexPath.row==2){
-     
+        [WyhAudioToolbox playMySonud];
     }else if (indexPath.row==3){
-        
+        [WyhAudioToolbox playDomi];
     }
     if (vc) {
         [self wyhPush:vc];

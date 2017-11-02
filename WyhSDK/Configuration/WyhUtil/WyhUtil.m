@@ -24,7 +24,14 @@
     }
   
 }
-
++(BOOL)isDevice{
+    if (TARGET_IPHONE_SIMULATOR == 1 && TARGET_OS_IPHONE == 1) {
+        NSLog(@"模拟器不支持该操作");
+        return NO;
+    }else{
+        return YES;
+    }
+}
 +(CGRect)getStringSize:(NSString *)string withFontSize:(CGFloat)fontSize withMaxWidth:(CGFloat)manWidth{
     
     return [string boundingRectWithSize:CGSizeMake(manWidth, MAXFLOAT) options:NSStringDrawingUsesFontLeading | NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : [UIFont systemFontOfSize:fontSize]} context:nil];

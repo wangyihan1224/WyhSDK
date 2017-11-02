@@ -1,36 +1,32 @@
 //
-//  WyhARKitViewController.m
+//  WyhAudioUnitViewController.m
 //  WyhSDK
 //
-//  Created by 王乙涵 on 2017/10/31.
+//  Created by 王乙涵 on 2017/11/1.
 //  Copyright © 2017年 王乙涵. All rights reserved.
 //
 
-#import "WyhARKitViewController.h"
+#import "WyhAudioUnitViewController.h"
 
-#import "WyhARKit.h"
+
 #import "WyhTableViewCell.h"
 static NSString *modelCell = @"modelCell";
-@interface WyhARKitViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface WyhAudioUnitViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *table;
 @property(nonatomic,strong)NSMutableArray *dataArray;
 @end
 
-@implementation WyhARKitViewController
+@implementation WyhAudioUnitViewController
 -(NSMutableArray *)dataArray{
     if (!_dataArray) {
         _dataArray = [NSMutableArray new];
         WyhModel *model = WyhModel.new;
         model.type = ModelTypeString;
-        model.textStr = @"ARKit增强现实技术框架\n是一种实时地计算摄影机影像的位置及角度并加上相应图像的技术，这种技术的目标是在屏幕上把虚拟世界套在现实世界并进行互动。";
+        model.textStr = @"AudioUnit音频处理框架\n提供了混音、均衡、格式转换、实时IO录制、回放、离线渲染、语音对讲(VoIP)等音频处理插件，它们都属于不同的AudioUnit，支持动态载入和使用。\nAudioUnit可以单独创建使用，但更多的是被组合使用在Audio Processing Graph容器中以达到多样的处理需要";
         
-        WyhModel *model1 = WyhModel.new;
-        model1.type = ModelTypeString;
-        model1.textStr = @"创建一个AR视图";
+       
         
-    
-        
-        [_dataArray addObjectsFromArray:@[model,model1]];
+        [_dataArray addObjectsFromArray:@[model]];
     }
     return _dataArray;
 }
@@ -47,7 +43,7 @@ static NSString *modelCell = @"modelCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.wyhTitle.wyhtext(@"ARKit") ;
+    self.wyhTitle.wyhtext(@"AudioUnit") ;
     self.wyhBackBt.hidden = NO;
     
     [self.view wyh_addSubView:@[self.table]];
@@ -88,9 +84,9 @@ static NSString *modelCell = @"modelCell";
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     UIViewController *vc = nil;
     if (indexPath.row==1) {
-      [WyhARKit runView:[WyhARKit creatScreen:self]] ;
+
     }else if (indexPath.row==2){
-     
+        
     }else if (indexPath.row==3){
         
     }

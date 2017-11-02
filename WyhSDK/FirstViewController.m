@@ -14,6 +14,10 @@
 #import "WyhAddressBookUIViewController.h"
 #import "WyhContactsUIViewController.h"
 #import "WyhAdSupportViewController.h"
+#import "WyhARKitViewController.h"
+#import "WyhAssetsLibraryViewController.h"
+#import "WyhAudioToolboxViewController.h"
+#import "WyhAudioUnitViewController.h"
 static NSString *cellId = @"cellId";
 @interface FirstViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *table;
@@ -181,6 +185,14 @@ static NSString *cellId = @"cellId";
         vc = WyhAddressBookUIViewController.new;
     }else if (indexPath.row==4){
         vc = WyhAdSupportViewController.new;
+    }else if (indexPath.row==5){
+        vc = WyhARKitViewController.new;
+    }else if (indexPath.row==6){
+        vc = WyhAssetsLibraryViewController.new;
+    }else if (indexPath.row==7){
+        vc = WyhAudioToolboxViewController.new;
+    }else if (indexPath.row==8){
+        vc = WyhAudioUnitViewController.new;
     }else if (indexPath.row==15){
         vc = WyhContactsUIViewController.new;
     }
