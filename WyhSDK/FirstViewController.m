@@ -18,6 +18,7 @@
 #import "WyhAssetsLibraryViewController.h"
 #import "WyhAudioToolboxViewController.h"
 #import "WyhAudioUnitViewController.h"
+#import "WyhAVFoundationViewController.h"
 static NSString *cellId = @"cellId";
 @interface FirstViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *table;
@@ -193,6 +194,8 @@ static NSString *cellId = @"cellId";
         vc = WyhAudioToolboxViewController.new;
     }else if (indexPath.row==8){
         vc = WyhAudioUnitViewController.new;
+    }else if (indexPath.row==9){
+        vc = WyhAVFoundationViewController.new;
     }else if (indexPath.row==15){
         vc = WyhContactsUIViewController.new;
     }
