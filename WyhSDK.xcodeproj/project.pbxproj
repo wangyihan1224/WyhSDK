@@ -68,6 +68,10 @@
 		7C5224CC1F8C6D9A00A72E99 /* WyhSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5224C91F8C6D9A00A72E99 /* WyhSocket.m */; };
 		7C60BCD41FAAC59F0065F381 /* WyhAVFoundationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C60BCD31FAAC59F0065F381 /* WyhAVFoundationViewController.m */; };
 		7C60BCD71FAAC5AE0065F381 /* WyhAVFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C60BCD61FAAC5AE0065F381 /* WyhAVFoundation.m */; };
+		7C60BCDC1FAB12330065F381 /* WyhAVKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C60BCDB1FAB12330065F381 /* WyhAVKit.m */; };
+		7C60BCDF1FAB12410065F381 /* WyhAVKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C60BCDE1FAB12410065F381 /* WyhAVKitViewController.m */; };
+		7C60BCE31FAB1C300065F381 /* WyhCallKitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C60BCE21FAB1C300065F381 /* WyhCallKitViewController.m */; };
+		7C60BCE61FAB1C3C0065F381 /* WyhCallKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C60BCE51FAB1C3C0065F381 /* WyhCallKit.m */; };
 		7C61319E1FA822970024206C /* WyhAddressBookUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C61319D1FA822970024206C /* WyhAddressBookUI.m */; };
 		7C6131A11FA822AA0024206C /* WyhAddressBookUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6131A01FA822AA0024206C /* WyhAddressBookUIViewController.m */; };
 		7C6131A61FA8663C0024206C /* WyhContactsUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C6131A51FA8663C0024206C /* WyhContactsUIViewController.m */; };
@@ -89,6 +93,9 @@
 		7C8065761FA31DD700E50AE6 /* WyhAccelerateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8065751FA31DD700E50AE6 /* WyhAccelerateViewController.m */; };
 		7C80657A1FA3370F00E50AE6 /* WyhTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8065791FA3370F00E50AE6 /* WyhTableViewCell.m */; };
 		7C80657E1FA337DD00E50AE6 /* WyhModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C80657D1FA337DD00E50AE6 /* WyhModel.m */; };
+		7C8F2CBA1FAFFCA200C833E2 /* Ringtone.caf in Resources */ = {isa = PBXBuildFile; fileRef = 7C8F2CB91FAFFCA200C833E2 /* Ringtone.caf */; };
+		7C8F2CBE1FB033E700C833E2 /* WyhCFNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8F2CBD1FB033E700C833E2 /* WyhCFNetwork.m */; };
+		7C8F2CC11FB033F400C833E2 /* WyhCFNetworkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8F2CC01FB033F400C833E2 /* WyhCFNetworkViewController.m */; };
 		7CB04E681F7BAEBB00FFF7FD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CB04E671F7BAEBB00FFF7FD /* AppDelegate.m */; };
 		7CB04E6E1F7BAEBB00FFF7FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CB04E6C1F7BAEBB00FFF7FD /* Main.storyboard */; };
 		7CB04E711F7BAEBB00FFF7FD /* WyhSDK.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7CB04E6F1F7BAEBB00FFF7FD /* WyhSDK.xcdatamodeld */; };
@@ -180,6 +187,14 @@
 		7C60BCD31FAAC59F0065F381 /* WyhAVFoundationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhAVFoundationViewController.m; sourceTree = "<group>"; };
 		7C60BCD51FAAC5AE0065F381 /* WyhAVFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhAVFoundation.h; sourceTree = "<group>"; };
 		7C60BCD61FAAC5AE0065F381 /* WyhAVFoundation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhAVFoundation.m; sourceTree = "<group>"; };
+		7C60BCDA1FAB12330065F381 /* WyhAVKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhAVKit.h; sourceTree = "<group>"; };
+		7C60BCDB1FAB12330065F381 /* WyhAVKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhAVKit.m; sourceTree = "<group>"; };
+		7C60BCDD1FAB12410065F381 /* WyhAVKitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhAVKitViewController.h; sourceTree = "<group>"; };
+		7C60BCDE1FAB12410065F381 /* WyhAVKitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhAVKitViewController.m; sourceTree = "<group>"; };
+		7C60BCE11FAB1C300065F381 /* WyhCallKitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhCallKitViewController.h; sourceTree = "<group>"; };
+		7C60BCE21FAB1C300065F381 /* WyhCallKitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhCallKitViewController.m; sourceTree = "<group>"; };
+		7C60BCE41FAB1C3C0065F381 /* WyhCallKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhCallKit.h; sourceTree = "<group>"; };
+		7C60BCE51FAB1C3C0065F381 /* WyhCallKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhCallKit.m; sourceTree = "<group>"; };
 		7C61319C1FA822970024206C /* WyhAddressBookUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhAddressBookUI.h; sourceTree = "<group>"; };
 		7C61319D1FA822970024206C /* WyhAddressBookUI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhAddressBookUI.m; sourceTree = "<group>"; };
 		7C61319F1FA822AA0024206C /* WyhAddressBookUIViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhAddressBookUIViewController.h; sourceTree = "<group>"; };
@@ -217,6 +232,11 @@
 		7C8065791FA3370F00E50AE6 /* WyhTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhTableViewCell.m; sourceTree = "<group>"; };
 		7C80657C1FA337DD00E50AE6 /* WyhModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhModel.h; sourceTree = "<group>"; };
 		7C80657D1FA337DD00E50AE6 /* WyhModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhModel.m; sourceTree = "<group>"; };
+		7C8F2CB91FAFFCA200C833E2 /* Ringtone.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Ringtone.caf; sourceTree = "<group>"; };
+		7C8F2CBC1FB033E700C833E2 /* WyhCFNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhCFNetwork.h; sourceTree = "<group>"; };
+		7C8F2CBD1FB033E700C833E2 /* WyhCFNetwork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhCFNetwork.m; sourceTree = "<group>"; };
+		7C8F2CBF1FB033F400C833E2 /* WyhCFNetworkViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WyhCFNetworkViewController.h; sourceTree = "<group>"; };
+		7C8F2CC01FB033F400C833E2 /* WyhCFNetworkViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WyhCFNetworkViewController.m; sourceTree = "<group>"; };
 		7CB04E631F7BAEBB00FFF7FD /* WyhSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WyhSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CB04E661F7BAEBB00FFF7FD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7CB04E671F7BAEBB00FFF7FD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -436,6 +456,29 @@
 			path = WyhAVFoundation;
 			sourceTree = "<group>";
 		};
+		7C60BCD91FAB122A0065F381 /* WyhAVKit */ = {
+			isa = PBXGroup;
+			children = (
+				7C60BCDA1FAB12330065F381 /* WyhAVKit.h */,
+				7C60BCDB1FAB12330065F381 /* WyhAVKit.m */,
+				7C60BCDD1FAB12410065F381 /* WyhAVKitViewController.h */,
+				7C60BCDE1FAB12410065F381 /* WyhAVKitViewController.m */,
+			);
+			path = WyhAVKit;
+			sourceTree = "<group>";
+		};
+		7C60BCE01FAB1C250065F381 /* WyhCallKit */ = {
+			isa = PBXGroup;
+			children = (
+				7C60BCE11FAB1C300065F381 /* WyhCallKitViewController.h */,
+				7C60BCE21FAB1C300065F381 /* WyhCallKitViewController.m */,
+				7C60BCE41FAB1C3C0065F381 /* WyhCallKit.h */,
+				7C60BCE51FAB1C3C0065F381 /* WyhCallKit.m */,
+				7C8F2CB91FAFFCA200C833E2 /* Ringtone.caf */,
+			);
+			path = WyhCallKit;
+			sourceTree = "<group>";
+		};
 		7C61319B1FA822800024206C /* WyhAddressBookUI */ = {
 			isa = PBXGroup;
 			children = (
@@ -513,6 +556,9 @@
 		7C80656F1FA31D4D00E50AE6 /* iOSSDKDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7C8F2CBB1FB0337400C833E2 /* WyhCFNetwork */,
+				7C60BCE01FAB1C250065F381 /* WyhCallKit */,
+				7C60BCD91FAB122A0065F381 /* WyhAVKit */,
 				7C60BCD11FAAC5940065F381 /* WyhAVFoundation */,
 				7C1C63711FA9D90300D8F6BC /* WyhAudioUnit */,
 				7C1C63651FA9D37B00D8F6BC /* WyhAudioToolbox */,
@@ -565,6 +611,17 @@
 			children = (
 			);
 			path = WyhTableView;
+			sourceTree = "<group>";
+		};
+		7C8F2CBB1FB0337400C833E2 /* WyhCFNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				7C8F2CBC1FB033E700C833E2 /* WyhCFNetwork.h */,
+				7C8F2CBD1FB033E700C833E2 /* WyhCFNetwork.m */,
+				7C8F2CBF1FB033F400C833E2 /* WyhCFNetworkViewController.h */,
+				7C8F2CC01FB033F400C833E2 /* WyhCFNetworkViewController.m */,
+			);
+			path = WyhCFNetwork;
 			sourceTree = "<group>";
 		};
 		7CB04E5A1F7BAEBB00FFF7FD = {
@@ -763,6 +820,7 @@
 				7C6131FD1FA8885B0024206C /* art.scnassets in Resources */,
 				7CB04E731F7BAEBB00FFF7FD /* Assets.xcassets in Resources */,
 				7CB04E6E1F7BAEBB00FFF7FD /* Main.storyboard in Resources */,
+				7C8F2CBA1FAFFCA200C833E2 /* Ringtone.caf in Resources */,
 				7C1C636E1FA9D73400D8F6BC /* diySound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -795,9 +853,11 @@
 				7C3804731F7DEF0E000127A7 /* UIView+WyhUtil.m in Sources */,
 				7C3804971F7DF016000127A7 /* WyhUtil.m in Sources */,
 				7C6131A91FA866CF0024206C /* WyhContactsUI.m in Sources */,
+				7C60BCE61FAB1C3C0065F381 /* WyhCallKit.m in Sources */,
 				7C61319E1FA822970024206C /* WyhAddressBookUI.m in Sources */,
 				7C8065731FA31DB700E50AE6 /* WyhAccelerate.m in Sources */,
 				7C3804851F7DEF66000127A7 /* WyhUIScrollView.m in Sources */,
+				7C8F2CBE1FB033E700C833E2 /* WyhCFNetwork.m in Sources */,
 				7CB04E681F7BAEBB00FFF7FD /* AppDelegate.m in Sources */,
 				7C3804C31F7E30D0000127A7 /* WyhLabelType.m in Sources */,
 				7C38048A1F7DEF77000127A7 /* WyhUILabel.m in Sources */,
@@ -811,6 +871,7 @@
 				7C1C63611FA9C60E00D8F6BC /* WyhAssetsLibrary.m in Sources */,
 				7C3804B31F7DF3AB000127A7 /* WyhQrCode.m in Sources */,
 				7C3EC57A1F9EE5860084142C /* WyhResume.m in Sources */,
+				7C8F2CC11FB033F400C833E2 /* WyhCFNetworkViewController.m in Sources */,
 				7C80657A1FA3370F00E50AE6 /* WyhTableViewCell.m in Sources */,
 				7C6CE4C61FA7287100DBE0B0 /* WyhAccountsViewController.m in Sources */,
 				7C60BCD41FAAC59F0065F381 /* WyhAVFoundationViewController.m in Sources */,
@@ -825,7 +886,10 @@
 				7C3804761F7DEF0E000127A7 /* UIScrollView+WyhUtil.m in Sources */,
 				7C3804A21F7DF228000127A7 /* WyhUITextField.m in Sources */,
 				7C1C63681FA9D38C00D8F6BC /* WyhAudioToolboxViewController.m in Sources */,
+				7C60BCDF1FAB12410065F381 /* WyhAVKitViewController.m in Sources */,
+				7C60BCDC1FAB12330065F381 /* WyhAVKit.m in Sources */,
 				7C3804801F7DEF56000127A7 /* WyhUITextView.m in Sources */,
+				7C60BCE31FAB1C300065F381 /* WyhCallKitViewController.m in Sources */,
 				7C38048F1F7DEF89000127A7 /* WyhUIButton.m in Sources */,
 				7C5224CA1F8C6D9A00A72E99 /* WyhSocket.m in Sources */,
 				7C6CE4CD1FA72DFB00DBE0B0 /* WyhAddressBook.m in Sources */,

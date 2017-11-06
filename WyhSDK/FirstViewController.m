@@ -19,6 +19,9 @@
 #import "WyhAudioToolboxViewController.h"
 #import "WyhAudioUnitViewController.h"
 #import "WyhAVFoundationViewController.h"
+#import "WyhAVKitViewController.h"
+#import "WyhCallKitViewController.h"
+#import "WyhCFNetworkViewController.h"
 static NSString *cellId = @"cellId";
 @interface FirstViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property(nonatomic,strong)UITableView *table;
@@ -29,6 +32,7 @@ static NSString *cellId = @"cellId";
 -(NSMutableArray *)dataArray{
     if (!_dataArray) {
         _dataArray = [NSMutableArray new];
+       
         [_dataArray addObjectsFromArray:@[@"Accelerate 包含加速数学和DSP函数。"
                                           ,@"Accounts 帮助用户访问和管理他们的外部帐户，而不需要他们进入账户的登录认证。"
                                           ,@"AddressBook 包含直接访问用户联系人数据库的函数。"
@@ -196,6 +200,12 @@ static NSString *cellId = @"cellId";
         vc = WyhAudioUnitViewController.new;
     }else if (indexPath.row==9){
         vc = WyhAVFoundationViewController.new;
+    }else if (indexPath.row==10){
+        vc = WyhAVKitViewController.new;
+    }else if (indexPath.row==11){
+        vc = WyhCallKitViewController.new;
+    }else if (indexPath.row==12){
+        vc = WyhCFNetworkViewController.new;
     }else if (indexPath.row==15){
         vc = WyhContactsUIViewController.new;
     }
